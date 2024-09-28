@@ -21,15 +21,15 @@
                 <a class="nav-link " aria-current="page" href="index.php">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="form.php">Contacto</a>
+                <a class="nav-link" href="form.php">Contactanos</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   Ejercicios
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Ejercicio1</a></li>
-                  <li><a class="dropdown-item" href="#">Ejercicio2</a></li>
+                  <li><a class="dropdown-item" href="login.php">Iniciar Sesión</a></li>
+                  <li><a class="dropdown-item" href="register.php">Registrarse</a></li>
                   <li><a class="dropdown-item" href="#">Ejercicio3</a></li>
                 </ul>
               </li>
