@@ -22,7 +22,6 @@
                 Si su sitio web no facilita la navegación, dificulta alcanzar los objetivos, carece de una estructura que permita escanear rápidamente la información o carga de manera lenta, es muy probable que los usuarios abandonen la página antes de terminar de leer el primer párrafo.
             </p>
         </div>
-
         <div>
             <h2>Principios de la Usabilidad Web</h2>
             <p>
