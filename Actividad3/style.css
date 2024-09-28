@@ -1,0 +1,95 @@
+/* Estilo del header */
+
+.navbar {
+    background-color: rgba(13, 13, 13, 0.4); /* Fondo con transparencia */
+  }
+.navbar-brand, .nav-link {
+    color: #F2F2F2 !important; /* Color del texto y enlaces */
+  }
+.navbar-nav .nav-link.active {
+    color: #F2F2F2 !important; /* Color especial para el enlace activo */
+    
+  }
+.dropdown-menu {
+    background-color: rgba(13, 13, 13, 0.4);
+}
+.dropdown-item {
+    color: #F2F2F2;
+}
+
+.nav-link:hover {
+    background-color: rgba(13, 13, 13, 1);; /* Fondo más claro al pasar el cursor */
+    color: #BFBFBF !important;    /* Texto negro al pasar el cursor */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    border-radius: 10px;
+}
+
+
+
+/* Estilo del Footer */
+
+
+#bodyFooter {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: rgba(13, 13, 13, 0.4); /* Fondo con transparencia */
+    padding: 10px 0;
+    text-align: center;
+    color: #F2F2F2;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-family: 'DM Sans', sans-serif;
+}
+
+
+/* Estilo del body */
+
+#colorBody{
+    font-family: 'DM Sans', sans-serif;
+    background-image: url('img/BackGround.jpeg');
+    background-size: cover;     
+}
+
+#estiloContent{
+    
+    background-color: rgba(255, 252, 252, 0.2);; /* Set background color */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra externa */
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 1%;
+    padding: 30px; /* Add some padding for visual appeal */
+    max-width: 90%; /* Set a maximum width (optional) */
+    border-radius: 15px;  
+    color: #F2F2F2; 
+    font-family: 'DM Sans', sans-serif;
+    
+
+}
+
+
+
+/* Estilo del formulario */
+.text-center{
+    padding-top: 20px;
+    margin-bottom: 20px;
+    color: #F2F2F2;
+    font-family: 'DM Sans', sans-serif;
+    
+}
+
+#form-container {
+    background-color: rgba(255, 252, 252, 0.2);; 
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 30px; 
+    max-width: 25%; 
+    border-radius: 15px;  
+    color: #F2F2F2;    
+    font-family: 'DM Sans', sans-serif;  
+}
