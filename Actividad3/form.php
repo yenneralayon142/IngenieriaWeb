@@ -12,29 +12,29 @@
     <h1 class="text-center">FORMULARIO DE ENVIO DE INFORMACIÓN</h1>
     <div id="form-container">
        
-    <form action="dataReception.php" method="post">
+    <form action="databaseConnection.php" method="post">
         <div class="mb-3">
             <label for="Apellido" class="form-label">Apellido</label>
-            <input type="text" class="form-control" name="Apellido" id="Apellido">
+            <input type="text" class="form-control" name="Apellido" id="apellido">
         </div>
         <div class="mb-3">
             <label for="Nombre" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="Nombre" id="Nombre">
+            <input type="text" class="form-control" name="Nombre" id="nombre">
         </div>
         <div class="mb-3"> 
             <label for="Edad" class="form-label">Edad</label>
-            <input type="number" class="form-control" name="Edad" id="Edad">
+            <input type="number" class="form-control" name="Edad" id="edad">
         </div>
         <div class="mb-3"> 
             <label for="Genero" class="form-label">Género</label>
-            <select class="form-select" name="Genero" id="Genero">
+            <select class="form-select" name="Genero" id="genero">
                 <option value="Masculino">Masculino</option> 
                 <option value="Femenino">Femenino</option>
             </select>
         </div>
         <div class="mb-3">
             <label for="Pais" class="form-label">País</label>
-            <input type="text" class="form-control" name="Pais" id="Pais">
+            <input type="text" class="form-control" name="Pais" id="pais">
         </div> 
         <button type="submit" class="btn btn btn-dark">Enviar</button>
     </form>

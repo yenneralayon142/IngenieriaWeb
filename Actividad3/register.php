@@ -12,34 +12,34 @@
     <h1 class="text-center">Inicio de Sesión</h1>
     <div id="form-container">
        
-    <form action="#" method="post">
+    <form action="databaseConnection.php" method="post">
         <div class="mb-3">
             <label for="Apellido" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="Nombre" id="Nombre">
+            <input type="text" class="form-control" name="Nombre" id="nombre">
         </div>
         <div class="mb-3">
             <label for="Nombre" class="form-label">Apellido</label>
-            <input type="text" class="form-control" name="Apellido" id="Apellido">
+            <input type="text" class="form-control" name="Apellido" id="apellido">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Edad</label>
-            <input type="text" class="form-control" name="Edad" id="Edad">
+            <input type="text" class="form-control" name="Edad" id="edad">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" name="Ciudad" id="Ciudad">
+            <input type="text" class="form-control" name="Ciudad" id="ciudad">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Celular</label>
-            <input type="number" class="form-control" name="Celular" id="Celular">
+            <input type="number" class="form-control" name="Celular" id="celular">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Contraseña</label>
-            <input type="text" class="form-control" name="Password" id="Password">
+            <input type="text" class="form-control" name="Password" id="password">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Usuario</label>
-            <input type="text" class="form-control" name="Usuario" id="Usuario">
+            <input type="text" class="form-control" name="Usuario" id="usuario">
         </div>
                 
         <button type="submit" class="btn btn btn-dark">Enviar</button>
