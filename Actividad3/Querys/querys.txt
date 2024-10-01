@@ -16,6 +16,8 @@ CREATE TABLE usuarios (
 );
 
 
+dataUsabilidad
+
 
 
  
