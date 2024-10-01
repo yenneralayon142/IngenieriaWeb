@@ -8,7 +8,11 @@
 
 </head>
 <body id="colorBody">
+<<<<<<< HEAD:Actividad3/Pages/dataReception.php
 <?php include 'Layouts/header.php'?> 
+=======
+<?php include '../Layouts/header.php'?> 
+>>>>>>> 563bfa23fb64d048da56342c1d06acd68e4d8885:Actividad3/src/Pages/dataReception.php
     <h1 class="text-center">DATOS ENVIADOS CON ÉXITO</h1>
 
  <div id="form-container">
