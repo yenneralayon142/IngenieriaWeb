@@ -15,31 +15,31 @@
     <form action="databaseConnection.php" method="post">
         <div class="mb-3">
             <label for="Apellido" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="Nombre" id="nombre">
+            <input type="text" class="form-control" name="nombre" id="nombre">
         </div>
         <div class="mb-3">
             <label for="Nombre" class="form-label">Apellido</label>
-            <input type="text" class="form-control" name="Apellido" id="apellido">
+            <input type="text" class="form-control" name="apellido" id="apellido">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Edad</label>
-            <input type="text" class="form-control" name="Edad" id="edad">
+            <input type="text" class="form-control" name="edad" id="edad">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" name="Ciudad" id="ciudad">
+            <input type="text" class="form-control" name="ciudad" id="ciudad">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Celular</label>
-            <input type="number" class="form-control" name="Celular" id="celular">
+            <input type="number" class="form-control" name="celular" id="celular">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Contraseña</label>
-            <input type="text" class="form-control" name="Password" id="password">
+            <input type="text" class="form-control" name="password" id="password">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Usuario</label>
-            <input type="text" class="form-control" name="Usuario" id="usuario">
+            <input type="text" class="form-control" name="usuario" id="usuario">
         </div>
                 
         <button type="submit" class="btn btn btn-dark">Enviar</button>
