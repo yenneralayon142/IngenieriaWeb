@@ -13,7 +13,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Obtener los datos enviados desde el formulario
+// Obtener los datos enviados desde el formulario Register
 $nombre = $_POST['nombre'];
 $apellido = $_POST['apellido'];
 $edad = $_POST['edad'];
@@ -21,6 +21,9 @@ $ciudad = $_POST['ciudad'];
 $celular = $_POST['celular'];
 $pass = $_POST['password'];
 $usuario = $_POST['usuario'];
+
+// Obtener los datos enviados desde el formlario Login
+
 
 // Verificar si los datos fueron enviados correctamente
 if (isset($nombre, $apellido, $edad, $ciudad, $celular, $pass, $usuario)) {
