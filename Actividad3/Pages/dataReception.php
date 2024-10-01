@@ -8,7 +8,7 @@
 
 </head>
 <body id="colorBody">
-<?php include 'header.php'?> 
+<?php include 'Layouts/header.php'?> 
     <h1 class="text-center">DATOS ENVIADOS CON ÉXITO</h1>
 
  <div id="form-container">

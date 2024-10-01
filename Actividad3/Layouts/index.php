@@ -1,11 +1,11 @@
 <?php
-    include 'header.php';  // Incluye el encabezado
+    include 'Layouts/header.php';  // Incluye el encabezado
 ?>
 
 <div class="container">
-    <?php include 'content.php'; ?> <!-- Incluye el contenido principal -->
+    <?php include 'Layouts/hcontent.php'; ?> <!-- Incluye el contenido principal -->
 </div>
 
 <?php
-    include 'footer.php';  // Incluye el pie de página
+    include 'Layouts/hfooter.php';  // Incluye el pie de página
 ?>

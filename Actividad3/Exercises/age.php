@@ -22,7 +22,7 @@
         <div>
         <?php
         // Verificamos si el formulario ha sido enviado
-        if ($_SERVER["REQUEST_METHOD"] == "POST") {
+       
             // Verificamos si la edad fue ingresada correctamente
             if (isset($_POST['edad']) && is_numeric($_POST['edad'])) {
                 $edad = (int)$_POST['edad']; // Convertir la edad a un entero para mayor seguridad
@@ -35,7 +35,7 @@
             } else {
                 echo "<p>Por favor, ingrese una edad válida.</p>";
             }
-        }
+        
         ?>
         </div>
     </div>
