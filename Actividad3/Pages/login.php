@@ -14,14 +14,13 @@
        
     <form action="#" method="post">
         <div class="mb-3">
-            <label for="Apellido" class="form-label">Usuario</label>
-            <input type="text" class="form-control" name="Usuario" id="Usuario">
+            <label for="usuario" class="form-label">Usuario</label>
+            <input type="text" class="form-control" name="usuario" id="usuario">
         </div>
         <div class="mb-3">
-            <label for="Nombre" class="form-label">Contraseña</label>
-            <input type="password" class="form-control" name="Password" id="Password">
-        </div>
-                
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="password" id="password">
+        </div>  
         <button type="submit" class="btn btn btn-dark">Enviar</button>
     </form>
     </div>
