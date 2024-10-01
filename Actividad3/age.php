@@ -9,9 +9,9 @@
 </head>
 <body id="colorBody">
 <?php include 'header.php'?> 
-    <h1 class="text-center">INICIO DE SESIÓN</h1>
+    <h1 class="text-center">VERIFICADOR DE MAYORÍA DE EDAD</h1>
     <div id="form-container">
-       
+    <p>Ingrese su edad</p>   
     <form action="#" method="post">
         <div class="mb-3">
             <label for="Apellido" class="form-label">Usuario</label>

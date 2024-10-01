@@ -2,28 +2,37 @@
 
 .navbar {
     background-color: rgba(13, 13, 13, 0.4); /* Fondo con transparencia */
-  }
+}
+
 .navbar-brand, .nav-link {
     color: #F2F2F2 !important; /* Color del texto y enlaces */
-  }
+}
+
 .navbar-nav .nav-link.active {
     color: #F2F2F2 !important; /* Color especial para el enlace activo */
-    
-  }
+}
+
 .dropdown-menu {
     background-color: rgba(13, 13, 13, 0.4);
 }
+
 .dropdown-item {
     color: #F2F2F2;
 }
 
 .nav-link:hover {
-    background-color: rgba(13, 13, 13, 1);; /* Fondo más claro al pasar el cursor */
-    color: #BFBFBF !important;    /* Texto negro al pasar el cursor */
+    background-color: rgba(13, 13, 13, 1); /* Fondo más claro al pasar el cursor */
+    color: #BFBFBF !important; /* Texto gris al pasar el cursor */
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
     border-radius: 10px;
 }
 
+.d-flex {
+    background-color: rgba(13, 13, 13, 1); /* Fondo más claro al pasar el cursor */
+    color: #BFBFBF !important; /* Texto gris al pasar el cursor */
+    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    border-radius: 10px;
+}
 
 
 /* Estilo del Footer */

@@ -9,7 +9,7 @@
 </head>
 <body id="colorBody">
 <?php include 'header.php'?> 
-    <h1 class="text-center">Inicio de Sesión</h1>
+    <h1 class="text-center">REGISTRO DE USUARIO</h1>
     <div id="form-container">
        
     <form action="databaseConnection.php" method="post">
