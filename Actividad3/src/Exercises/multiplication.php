@@ -10,35 +10,29 @@
 <body id="colorBody">
 <?php include '../Layouts/header.php'; ?> 
 
-    <h1 class="text-center">VERIFICADOR DE MAYORÍA DE EDAD</h1>
     <div id="form-container">
+        <h2 class="text-center">GENERADOR DE TABLAS DE MULTIPLICAR</h2>
         <form action="" method="post">
             <div class="mb-3">
-                <label for="Edad" class="form-label">Ingrese su edad actual:</label>
-                <input type="number" class="form-control" name="edad" id="edad" required>
-            </div>                      
-            <button type="submit" class="btn btn-dark">Enviar</button>
+                <label for="numero" class="form-label">Ingrese un número para ver su tabla de multiplicar:</label>
+                <input type="number" class="form-control" name="numero" id="numero" required min="1" max="100">
+            </div>
+            <button type="submit" class="btn btn-dark w-100">Generar Tabla</button>
         </form>
 
-        <div class="text-center">
+        <div class="tabla-multiplicar">
         <?php
-              
-            if (isset($_POST['edad']) && is_numeric($_POST['edad'])) {
-                $edad = (int)$_POST['edad']; 
-            
-                if ($edad > 0) { 
-                    if ($edad >= 18) {
-                        echo "<p>Usted es mayor de edad y tiene $edad años.</p>";
-                    } else {
-                        echo "<p>Usted es menor de edad y tiene $edad años.</p>";
-                    }
-                } else {
-                    echo "<p>Por favor, ingrese una edad válida mayor a 0.</p>";
-                }
-            } else {
-                echo "<p>Por favor, ingrese una edad válida.</p>";
+        if (isset($_POST['numero']) && is_numeric($_POST['numero'])) {
+            $numero = (int)$_POST['numero'];
+
+            echo "<h3>Tabla de multiplicar del $numero</h3>";
+            echo "<table>";
+            for ($i = 1; $i <= 9; $i++) {
+                $resultado = $numero * $i;
+                echo "<tr><td>$numero x $i = $resultado</td></tr>";
             }
-        
+            echo "</table>";
+        }
         ?>
         </div>
     </div>

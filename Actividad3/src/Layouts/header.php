@@ -34,8 +34,8 @@
 
                   <li><a class="dropdown-item" href="../Exercises/age.php">Verificador de Edad</a></li>
 
-                  <li><a class="dropdown-item" href="#">Tabla de Multiplicar</a></li>
-                  <li><a class="dropdown-item" href="#">Calculadora de IMC</a></li>
+                  <li><a class="dropdown-item" href="../Exercises/multiplication.php">Tabla de Multiplicar</a></li>
+                  <li><a class="dropdown-item" href="../Exercises/imc.php">Calculadora de IMC</a></li>
                 </ul>
               </li>
             </ul>
