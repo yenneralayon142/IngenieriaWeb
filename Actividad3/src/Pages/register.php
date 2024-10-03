@@ -48,8 +48,9 @@
                 <div id="passwordError" class="error"></div>
             </div>
             <button type="submit" class="btn btn btn-dark">Enviar</button>
+            
         </form>
     </div>
-    <script src="validations/validations.js"></script>
+    <script src="validations/validationsRegister.js"></script>
 </body>
 </html>

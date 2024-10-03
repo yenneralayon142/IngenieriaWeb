@@ -1,42 +1,47 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; /* Para evitar que el texto se ajuste automáticamente en dispositivos móviles */
+    -moz-osx-font-smoothing: grayscale; /* Mejora la suavidad de las fuentes en MacOS */
+}
+
 /* Estilo del header */
 
 .navbar {
     background-color: rgba(13, 13, 13, 0.4); /* Fondo con transparencia */
-}
-
+  }
 .navbar-brand, .nav-link {
     color: #F2F2F2 !important; /* Color del texto y enlaces */
-}
-
+  }
 .navbar-nav .nav-link.active {
     color: #F2F2F2 !important; /* Color especial para el enlace activo */
-}
-
+    
+  }
 .dropdown-menu {
     background-color: rgba(13, 13, 13, 0.4);
 }
-
 .dropdown-item {
     color: #F2F2F2;
 }
 
 .nav-link:hover {
-    background-color: rgba(13, 13, 13, 1); /* Fondo más claro al pasar el cursor */
-    color: #BFBFBF !important; /* Texto gris al pasar el cursor */
+    background-color: rgba(13, 13, 13, 1);; /* Fondo más claro al pasar el cursor */
+    color: #BFBFBF !important;    /* Texto negro al pasar el cursor */
     transition: background-color 0.3s, color 0.3s; /* Transición suave */
     border-radius: 10px;
 }
-
-.d-flex {
-    background-color: rgba(13, 13, 13, 1); /* Fondo más claro al pasar el cursor */
-    color: #BFBFBF !important; /* Texto gris al pasar el cursor */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
-    border-radius: 10px;
-}
-
 
 /* Estilo del Footer */
-
 
 #bodyFooter {
     margin: 0;
@@ -62,12 +67,12 @@ footer {
 
 #colorBody{
     font-family: 'DM Sans', sans-serif;
-    background-image: url('img/BackGround3.jpeg');
+    background-image: url('img/BackGround.jpeg');
     background-size: cover;     
 }
 
 #estiloContent{
-    
+  
     background-color: rgba(255, 252, 252, 0.2);; /* Set background color */
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra externa */
     margin: 0 auto; /* Center the container horizontally */
@@ -77,11 +82,7 @@ footer {
     border-radius: 15px;  
     color: #F2F2F2; 
     font-family: 'DM Sans', sans-serif;
-    
-
 }
-
-
 
 /* Estilo del formulario */
 .text-center{
@@ -91,7 +92,6 @@ footer {
     font-family: 'DM Sans', sans-serif;
     
 }
-
 #form-container {
     background-color: rgba(255, 252, 252, 0.2);; 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
@@ -101,25 +101,4 @@ footer {
     border-radius: 15px;  
     color: #F2F2F2;    
     font-family: 'DM Sans', sans-serif;  
-}
-
-
-
-
-.tabla-multiplicar {
-    margin-top: 20px;
-    text-align: center;
-    color: #333;
-    font-size: 18px;
-}
-
-table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-    padding: 10px;
 }
