@@ -1,5 +1,27 @@
             document.getElementById('registroForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita que se recargue la página
             let isValid = true;
+
+            const form = new FormData(this);
+    
+            // Envía los datos del formulario usando fetch
+            fetch('../databaseConnection.php', {
+                method: 'POST',
+                body: form,
+            })
+            .then(response => response.text())
+            .then(data => {
+                // Mostrar el mensaje de éxito o error en el div #responseMessage
+                const responseMessage = document.getElementById('responseMessage');
+                responseMessage.innerHTML = data;
+                responseMessage.classList.add('alert', 'alert-success'); // Estilo de bootstrap para el mensaje
+            })
+            .catch(error => {
+                // Mostrar mensaje de error si falla la petición
+                const responseMessage = document.getElementById('responseMessage');
+                responseMessage.innerHTML = 'Ocurrió un error. Inténtalo de nuevo.';
+                responseMessage.classList.add('alert', 'alert-danger');
+            });
 
             // Obtener los valores de los campos
             const nombre = document.getElementById('nombre').value.trim();

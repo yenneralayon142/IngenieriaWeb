@@ -48,7 +48,7 @@
                 <div id="passwordError" class="error"></div>
             </div>
             <button type="submit" class="btn btn btn-dark">Enviar</button>
-            
+            <div id="responseMessage" class="mt-3"></div>
         </form>
     </div>
     <script src="validations/validationsRegister.js"></script>
