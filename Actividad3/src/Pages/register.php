@@ -14,31 +14,31 @@
     <form action="../databaseConnection.php" method="post">
         <div class="mb-3">
             <label for="Apellido" class="form-label">Nombre</label>
-            <input type="text" class="form-control" name="nombre" id="nombre">
+            <input type="text" class="form-control" name="nombre" id="nombre" plaaceholder="Yenner">
         </div>
         <div class="mb-3">
             <label for="Nombre" class="form-label">Apellido</label>
-            <input type="text" class="form-control" name="apellido" id="apellido">
+            <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Alayon">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Edad</label>
-            <input type="text" class="form-control" name="edad" id="edad">
+            <input type="text" class="form-control" name="edad" id="edad" placeholder="21">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Ciudad</label>
-            <input type="text" class="form-control" name="ciudad" id="ciudad">
+            <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Bogotá">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Celular</label>
-            <input type="number" class="form-control" name="celular" id="celular">
-        </div>
-        <div class="mb-3">
-            <label for="Apellido" class="form-label">Contraseña</label>
-            <input type="text" class="form-control" name="password" id="password">
+            <input type="number" class="form-control" name="celular" id="celular" placeholder="3224358899">
         </div>
         <div class="mb-3">
             <label for="Apellido" class="form-label">Usuario</label>
-            <input type="text" class="form-control" name="usuario" id="usuario">
+            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Messi05">
+        </div>
+        <div class="mb-3">
+            <label for="Apellido" class="form-label">Contraseña</label>
+            <input type="text" class="form-control" name="password" id="password" placeholder="Ingresa tu contraseña">
         </div>
         <button type="submit" class="btn btn btn-dark">Enviar</button>
     </form>
