@@ -8,12 +8,9 @@
 
 </head>
 <body id="colorBody">
-
-
 <?php include '../Layouts/header.php'?> 
     <h1 class="text-center">REGISTRO DE USUARIO</h1>
     <div id="form-container">
-       
     <form action="../databaseConnection.php" method="post">
         <div class="mb-3">
             <label for="Apellido" class="form-label">Nombre</label>
@@ -43,7 +40,6 @@
             <label for="Apellido" class="form-label">Usuario</label>
             <input type="text" class="form-control" name="usuario" id="usuario">
         </div>
-                
         <button type="submit" class="btn btn btn-dark">Enviar</button>
     </form>
     </div>
