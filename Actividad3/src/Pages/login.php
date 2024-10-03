@@ -11,28 +11,16 @@
 <?php include '../Layouts/header.php'?> 
     <h1 class="text-center">INICIO DE SESIÓN</h1>
         <div id="form-container">
-        <form action="databaseConnection.php" method="post">
+        <form action="../databaseConnection.php" method="post">
             <div class="mb-3">
-                <label for="usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" name="login_usuario" id="login_usuario" value="<?php echo isset($_POST['login_usuario']) ? $_POST['login_usuario'] : ''; ?>">
-                <?php if (isset($errores['login_usuario'])): ?>
-                    <small class="text-danger"><?php echo $errores['login_usuario']; ?></small>
-                <?php endif; ?>
+                <label for="login_usuario" class="form-label">Usuario</label>
+                <input type="text" class="form-control" name="login_usuario" id="login_usuario" placeholder="root">
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" name="login_password" id="login_password">
-                <?php if (isset($errores['login_password'])): ?>
-                    <small class="text-danger"><?php echo $errores['login_password']; ?></small>
-                <?php endif; ?>
+                <label for="login_password" class="form-label">Contraseña</label>
+                <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Ingrese su contraseña">  
             </div>  
             <button type="submit" class="btn btn btn-dark">Enviar</button>
-
-            <?php if (isset($errores['general'])): ?>
-                <div class="mt-3 text-danger">
-                    <?php echo $errores['general']; ?>
-                </div>
-            <?php endif; ?>
         </form>
         </div>
     <?php include '../Layouts/footer.php'?> 
