@@ -1,32 +1,15 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    color: inherit;
-    border: none;
-    outline: none;
-    vertical-align: baseline;
-    scroll-behavior: smooth;
-    -webkit-text-size-adjust: 100%; /* Para evitar que el texto se ajuste automáticamente en dispositivos móviles */
-    -moz-osx-font-smoothing: grayscale; /* Mejora la suavidad de las fuentes en MacOS */
-}
-
 /* Estilo del header */
 
 .navbar {
-    background-color: rgba(13, 13, 13, 0.4); /* Fondo con transparencia */
+    background-color: rgba(13, 13, 13, 0.4); 
 }
 
 .navbar-brand, .nav-link {
-    color: #F2F2F2 !important; /* Color del texto y enlaces */
+    color: #F2F2F2 !important; 
 }
 
 .navbar-nav .nav-link.active {
-    color: #F2F2F2 !important; /* Color especial para el enlace activo */
+    color: #F2F2F2 !important; 
 }
 
 .dropdown-menu {
@@ -38,63 +21,71 @@
 }
 
 .nav-link:hover {
-    background-color: rgba(13, 13, 13, 1); /* Fondo más claro al pasar el cursor */
-    color: #BFBFBF !important; /* Texto gris al pasar el cursor */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    background-color: rgba(13, 13, 13, 1); 
+    color: #BFBFBF !important; 
+    transition: background-color 0.3s, color 0.3s; 
     border-radius: 10px;
 }
 
 .d-flex {
-    background-color: rgba(13, 13, 13, 1); /* Fondo más claro al pasar el cursor */
-    color: #BFBFBF !important; /* Texto gris al pasar el cursor */
-    transition: background-color 0.3s, color 0.3s; /* Transición suave */
+    background-color: rgba(13, 13, 13, 1); 
+    color: #BFBFBF !important; 
+    transition: background-color 0.3s, color 0.3s; 
     border-radius: 10px;
 }
 
 
 /* Estilo del Footer */
 
+
 #bodyFooter {
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh; 
+    margin: 0;
+    padding: 0;
 }
 
 footer {
-    background-color: rgba(13, 13, 13, 0.4); /* Fondo con transparencia */
+    background-color: rgba(13, 13, 13, 0.4);
     padding: 10px 0;
     text-align: center;
     color: #F2F2F2;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     font-family: 'DM Sans', sans-serif;
+    margin-top: auto; /* Esto empuja el footer al fondo del contenedor flex */
 }
+
 
 /* Estilo del body */
 
-#colorBody{
+#colorBody {
     font-family: 'DM Sans', sans-serif;
-    background-image: url('img/BackGround3.jpeg');
-    background-size: cover;     
+    background-image: url('img/BackGround.jpeg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    min-height: 100vh; 
 }
 
 #estiloContent{
     
-    background-color: rgba(255, 252, 252, 0.2);; /* Set background color */
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Sombra externa */
-    margin: 0 auto; /* Center the container horizontally */
+    background-color: rgba(255, 252, 252, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
+    margin: 0 auto; 
     margin-top: 1%;
-    padding: 30px; /* Add some padding for visual appeal */
-    max-width: 90%; /* Set a maximum width (optional) */
+    padding: 30px; 
+    max-width: 90%; 
     border-radius: 15px;  
     color: #F2F2F2; 
     font-family: 'DM Sans', sans-serif;
     
 
 }
+
+
 
 /* Estilo del formulario */
 .text-center{
@@ -106,30 +97,15 @@ footer {
 }
 
 #form-container {
-    background-color: rgba(255, 252, 252, 0.2);; 
+    background-color: rgba(255, 252, 252, 0.2); 
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    margin: 0 auto; /* Center the container horizontally */
+    margin: 0 auto; 
     padding: 30px; 
-    max-width: 25%; 
+    max-width: 90%; 
+    width: 500px; 
     border-radius: 15px;  
     color: #F2F2F2;    
     font-family: 'DM Sans', sans-serif;  
 }
 
-.tabla-multiplicar {
-    margin-top: 20px;
-    text-align: center;
-    color: #333;
-    font-size: 18px;
-}
 
-table {
-    margin-left: auto;
-    margin-right: auto;
-    border-collapse: collapse;
-}
-
-table, th, td {
-    border: 1px solid black;
-    padding: 10px;
-}

@@ -10,33 +10,43 @@
 <body id="colorBody">
 <?php include '../Layouts/header.php'; ?> 
 
-    <div id="form-container">
-        <h2 class="text-center">GENERADOR DE TABLAS DE MULTIPLICAR</h2>
-        <form action="" method="post">
-            <div class="mb-3">
-                <label for="numero" class="form-label">Ingrese un número para ver su tabla de multiplicar:</label>
-                <input type="number" class="form-control" name="numero" id="numero" required min="1" max="100">
+
+<h1 class="text-center my-2">GENERADOR DE TABLAS DE MULTIPLICAR</h1>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12">
+                <div id="form-container" class="card p-4">
+                    <form action="" method="post">
+                        <div class="mb-3">
+                            <label for="numero" class="form-label">Ingrese un número para ver su tabla de multiplicar:</label>
+                            <input type="number" class="form-control" name="numero" id="numero" required min="1" max="100">
+                        </div>
+                        <button type="submit" class="btn btn-dark w-100">Generar Tabla</button>
+                    </form>
+
+                    <div class="tabla-multiplicar mt-4">
+                        <?php
+                        if (isset($_POST['numero']) && is_numeric($_POST['numero'])) {
+                            $numero = (int)$_POST['numero'];
+
+                            echo "<h3 class='text-center'>Tabla de multiplicar del $numero</h3>";
+                            echo "<table class='table table-bordered table-striped'>";
+                            echo "<thead class='table-dark'><tr><th>Operación</th><th>Resultado</th></tr></thead>";
+                            echo "<tbody>";
+                            for ($i = 1; $i <= 9; $i++) {
+                                $resultado = $numero * $i;
+                                echo "<tr><td>$numero x $i</td><td>$resultado</td></tr>";
+                            }
+                            echo "</tbody>";
+                            echo "</table>";
+                        }
+                        ?>
+                    </div>
+                </div>
             </div>
-            <button type="submit" class="btn btn-dark w-100">Generar Tabla</button>
-        </form>
-
-        <div class="tabla-multiplicar">
-        <?php
-        if (isset($_POST['numero']) && is_numeric($_POST['numero'])) {
-            $numero = (int)$_POST['numero'];
-
-            echo "<h3>Tabla de multiplicar del $numero</h3>";
-            echo "<table>";
-            for ($i = 1; $i <= 9; $i++) {
-                $resultado = $numero * $i;
-                echo "<tr><td>$numero x $i = $resultado</td></tr>";
-            }
-            echo "</table>";
-        }
-        ?>
         </div>
     </div>
-
+    
     <?php include '../Layouts/footer.php'; ?> 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
