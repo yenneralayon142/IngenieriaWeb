@@ -9,8 +9,8 @@
 </head>
 <body id="colorBody">
     <?php include '../Layouts/header.php'?> 
-    <h1 class="text-center">INICIO DE SESIÓN</h1>
-    <div id="form-container">
+    <h2 class="text-center">INICIO DE SESIÓN</h1>
+    <div class="form-container">
         <form id="loginForm" method="post">
             <div class="mb-3">
                 <label for="login_usuario" class="form-label">Usuario</label>
@@ -21,10 +21,14 @@
                 <label for="login_password" class="form-label">Contraseña</label>
                 <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Ingrese su contraseña">  
                 <div id="passwordError" class="text-danger"></div> <!-- Mensaje de error para contraseña -->
-            </div>  
-            <button type="submit" class="btn btn-dark">Enviar</button>
+            </div> 
+            <div class="d-flex justify-content-center mt-3">
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </div> 
         </form>
-        <div id="responseMessage" class="mt-3"></div> <!-- Para mostrar mensajes de respuesta -->
+        <div class="d-flex justify-content-center mt-3">
+            <div id="responseMessage" class="mt-3"></div> <!-- Para mostrar mensajes de respuesta -->
+        </div> 
     </div>
     <?php include '../Layouts/footer.php'?> 
 </body>

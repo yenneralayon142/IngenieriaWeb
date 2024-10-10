@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body id="colorBody">
-    <main id="estiloContent">
+    <main class="estiloContent">
         <h1 class="text-center">Teoria Usabilidad y Desarrollo de Aplicaciones Web</h1><br>
         <div>
             <h2>¿Qué es la usabilidad Web?</h2>
@@ -16,7 +16,6 @@
                 La usabilidad web se refiere a la facilidad de uso que tiene una página o aplicación web. De esta forma los internautas interactúan con el sitio y consiguen sus objetivos de forma sencilla, intuitiva, agradable y segura.
             </p>
         </div>
-
         <div>
             <h2>¿Por qué es importante la usabilidad Web?</h2>
             <p>

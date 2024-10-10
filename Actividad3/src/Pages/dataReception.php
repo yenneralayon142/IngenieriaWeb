@@ -9,7 +9,7 @@
 </head>
 <body id="colorBody">
 <?php include '../Layouts/header.php'?> 
-    <h1 class="text-center">DATOS ENVIADOS CON ÉXITO</h1>
+    <h2 class="text-center">DATOS ENVIADOS CON ÉXITO</h1>
  <div id="form-container">
     <?php
             //Sintaxis básica de una variable utilizamos el simbolo $
