@@ -1,11 +1,22 @@
-<?php
-    include 'layouts/header.php';  // Incluye el encabezado
-?>
-
-<div class="container">
-    <?php include 'layouts/content.php'; ?> <!-- Incluye el contenido principal -->
-</div>
-
-<?php
-    include 'layouts/footer.php';  // Incluye el pie de página
-?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/INGENIERIAWEB/Actividad3/src/style.css">
+    <title>Usabilidad Web</title>
+    <?php
+        include 'layouts/header.php';  // Incluye el encabezado
+    ?>
+</head>
+<body>
+    <div class="container">
+        <?php include 'layouts/content.php'; ?> <!-- Incluye el contenido principal -->
+    </div>
+    <?php
+        include 'layouts/footer.php';  // Incluye el pie de página
+    ?>
+</body>
+</html>

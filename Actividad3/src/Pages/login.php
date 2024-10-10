@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <?php include '../Layouts/header.php'?> 
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body id="colorBody">
+    <?php include '../Layouts/header.php'?> 
     <h1 class="text-center">INICIO DE SESIÓN</h1>
     <div id="form-container">
         <form id="loginForm" method="post">
@@ -25,9 +26,8 @@
         </form>
         <div id="responseMessage" class="mt-3"></div> <!-- Para mostrar mensajes de respuesta -->
     </div>
-    <footer>
-        <?php include '../Layouts/footer.php'?> 
-    </footer>
+    <?php include '../Layouts/footer.php'?> 
+</body>
     <!-- Asegúrate de cargar los scripts al final del body -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Agregar jQuery -->
     <script src="../service/loginService.js"></script>

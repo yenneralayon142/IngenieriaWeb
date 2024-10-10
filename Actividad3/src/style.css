@@ -1,111 +1,122 @@
-/* Estilo del header */
+/* Estilos generales para todos los elementos, resetea los valores por defecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    border: none;
+    outline: none;
+    vertical-align: baseline;
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%; /* Para evitar que el texto se ajuste automáticamente en dispositivos móviles */
+    -moz-osx-font-smoothing: grayscale; /* Mejora la suavidad de las fuentes en MacOS */
+}
 
+/* Definición de variables CSS */
+:root {
+    --color-bg-navbar: #343a40; /* Color de fondo de la navbar */
+    --color-text: #f8f9fa; /* Color de texto */
+    --color-highlight: #ffc107; /* Color de resaltado */
+    --color-hover: #e0a800; /* Color de fondo en hover */
+    --color-dropdown-bg: #495057; /* Color de fondo del dropdown */
+    --font-size-navbar-brand: 1.8rem; /* Tamaño de fuente para el título de la navbar */
+    --font-size-nav-link: 1.1rem; /* Tamaño de fuente para los enlaces de navegación */
+    --border-radius: 5px; /* Bordes redondeados */
+    --color-bg-footer: #343a40; /* Color de fondo del footer */
+    --color-footer-text: #f8f9fa; /* Color de texto del footer */
+    --font-size-footer: 1rem; /* Tamaño de fuente para el texto del footer */
+}
+
+/* Estilos para el cuerpo */
+html, body {
+    height: 100%; /* Asegura que el cuerpo ocupe el 100% de la altura */
+}
+
+body {
+    display: flex; /* Flexbox para permitir el posicionamiento */
+    flex-direction: column; /* Coloca el footer al final */
+}
+
+/* Estilos para la barra de navegación */
 .navbar {
-    background-color: rgba(13, 13, 13, 0.4); 
+    background-color: var(--color-bg-navbar); /* Usando variable para el color de fondo */
+    border-bottom: 2px solid var(--color-dropdown-bg); /* Borde inferior */
 }
 
-.navbar-brand, .nav-link {
-    color: #F2F2F2 !important; 
+.navbar-brand {
+    font-size: var(--font-size-navbar-brand); /* Usando variable para tamaño de fuente */
+    font-weight: bold; /* Negrita */
+    color: var(--color-text); /* Color de texto */
+    transition: color 0.3s; /* Transición suave */
 }
 
-.navbar-nav .nav-link.active {
-    color: #F2F2F2 !important; 
+.navbar-brand:hover {
+    color: var(--color-highlight); /* Color de texto en hover */
 }
 
-.dropdown-menu {
-    background-color: rgba(13, 13, 13, 0.4);
-}
-
-.dropdown-item {
-    color: #F2F2F2;
+.nav-link {
+    color: var(--color-text); /* Color de texto */
+    font-size: var(--font-size-nav-link); /* Usando variable para tamaño de fuente */
+    transition: color 0.3s; /* Transición suave */
 }
 
 .nav-link:hover {
-    background-color: rgba(13, 13, 13, 1); 
-    color: #BFBFBF !important; 
-    transition: background-color 0.3s, color 0.3s; 
-    border-radius: 10px;
+    color: var(--color-highlight); /* Color de texto amarillo al pasar el mouse */
 }
 
-.d-flex {
-    background-color: rgba(13, 13, 13, 1); 
-    color: #BFBFBF !important; 
-    transition: background-color 0.3s, color 0.3s; 
-    border-radius: 10px;
+.navbar-toggler {
+    border-color: var(--color-text); /* Color del borde del botón */
 }
 
-
-/* Estilo del Footer */
-
-
-#bodyFooter {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    min-height: 100vh; 
-    margin: 0;
-    padding: 0;
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 0.5)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E"); /* Color del icono */
 }
 
-footer {
-    background-color: rgba(13, 13, 13, 0.4);
-    padding: 10px 0;
-    text-align: center;
-    color: #F2F2F2;
-    width: 100%;
-    font-family: 'DM Sans', sans-serif;
-    margin-top: auto; /* Esto empuja el footer al fondo del contenedor flex */
+.dropdown-menu {
+    background-color: var(--color-dropdown-bg); /* Usando variable para el color de fondo del dropdown */
+    border: none; /* Sin borde */
+}
+
+.dropdown-item {
+    color: var(--color-text); /* Color de texto */
+}
+
+.dropdown-item:hover {
+    background-color: var(--color-bg-navbar); /* Color de fondo en hover */
+    color: var(--color-highlight); /* Color de texto amarillo en hover */
 }
 
 
-/* Estilo del body */
-
-#colorBody {
-    font-family: 'DM Sans', sans-serif;
-    background-image: url('img/BackGround.jpeg');
-    background-size: cover; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-attachment: fixed; 
-    min-height: 100vh; 
+/* Estilos para los botones de inicio de sesión y registro */
+.btn {
+    background-color: var(--color-highlight); /* Usando variable para el color de fondo */
+    color: var(--color-bg-navbar); /* Color de texto oscuro */
+    font-weight: bold; /* Negrita */
+    padding: 10px 20px; /* Espaciado interno */
+    border-radius: var(--border-radius); /* Bordes redondeados */
+    transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
 }
 
-#estiloContent{
-    
-    background-color: rgba(255, 252, 252, 0.2);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    margin: 0 auto; 
-    margin-top: 1%;
-    padding: 30px; 
-    max-width: 90%; 
-    border-radius: 15px;  
-    color: #F2F2F2; 
-    font-family: 'DM Sans', sans-serif;
-    
-
+.btn:hover {
+    background-color: var(--color-hover); /* Color más oscuro en hover */
+    color: var(--color-text); /* Color de texto blanco en hover */
 }
 
-
-
-/* Estilo del formulario */
-.text-center{
-    padding-top: 20px;
-    margin-bottom: 20px;
-    color: #F2F2F2;
-    font-family: 'DM Sans', sans-serif;
-    
+/* Estilos para el footer */
+.footer {
+    background-color: var(--color-bg-footer); /* Usando variable para el color de fondo */
+    padding: 20px 0; /* Espaciado interno */
+    margin-top: auto; /* Empuja el footer al final del contenedor */
+    width: 100%; /* Ancho completo */
 }
 
-#form-container {
-    background-color: rgba(255, 252, 252, 0.2); 
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); 
-    margin: 0 auto; 
-    padding: 30px; 
-    max-width: 90%; 
-    width: 500px; 
-    border-radius: 15px;  
-    color: #F2F2F2;    
-    font-family: 'DM Sans', sans-serif;  
+.footer-text {
+    color: var(--color-footer-text); /* Usando variable para el color de texto */
+    font-size: var(--font-size-footer); /* Usando variable para tamaño de fuente */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Alinea el texto al centro */
 }
-
-
