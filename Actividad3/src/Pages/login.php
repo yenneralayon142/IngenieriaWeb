@@ -10,7 +10,7 @@
 <body id="colorBody">
     <?php include '../Layouts/header.php'?> 
     <h1 class="text-center">INICIO DE SESIÓN</h1>
-    <div id="form-container">
+    <div class="form-container">
         <form id="loginForm" method="post">
             <div class="mb-3">
                 <label for="login_usuario" class="form-label">Usuario</label>

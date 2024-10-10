@@ -31,7 +31,7 @@
     --font-size-footer: 1rem; /* Tamaño de fuente para el texto del footer */
 }
 
-/* Estilos para el cuerpo */
+/* ------ Estilos Generales  para el cuerpo ----- */
 html, body {
     height: 100%; /* Asegura que el cuerpo ocupe el 100% de la altura */
 }
@@ -41,7 +41,8 @@ body {
     flex-direction: column; /* Coloca el footer al final */
 }
 
-/* Estilos para la barra de navegación */
+
+/*----- Estilos para la barra de navegación ------*/
 .navbar {
     background-color: var(--color-bg-navbar); /* Usando variable para el color de fondo */
     border-bottom: 2px solid var(--color-dropdown-bg); /* Borde inferior */
@@ -91,7 +92,8 @@ body {
 }
 
 
-/* Estilos para los botones de inicio de sesión y registro */
+/* ---- Estilos para los botones de inicio de sesión y registro ------ */
+
 .btn {
     background-color: var(--color-highlight); /* Usando variable para el color de fondo */
     color: var(--color-bg-navbar); /* Color de texto oscuro */
@@ -106,7 +108,8 @@ body {
     color: var(--color-text); /* Color de texto blanco en hover */
 }
 
-/* Estilos para el footer */
+
+/* ----- Estilos para el footer ------*/
 .footer {
     background-color: var(--color-bg-footer); /* Usando variable para el color de fondo */
     padding: 20px 0; /* Espaciado interno */
@@ -119,4 +122,26 @@ body {
     font-size: var(--font-size-footer); /* Usando variable para tamaño de fuente */
     margin: 0; /* Sin margen */
     text-align: center; /* Alinea el texto al centro */
+}
+
+
+/* Estilo del contenedor del formulario */
+.form-container {
+    width: 50dvw;
+    margin: 2rem auto; /* Centrando el formulario */
+    padding: 2rem; /* Relleno interno */
+    background-color: white; /* Fondo blanco */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo del botón de envío */
+.btn-dark {
+    background-color: #343a40; /* Color de fondo */
+    border-color: #343a40; /* Color del borde */
+}
+
+.btn-dark:hover {
+    background-color: #23272b; /* Color de fondo al pasar el ratón */
+    border-color: #1d2124; /* Color del borde al pasar el ratón */
 }

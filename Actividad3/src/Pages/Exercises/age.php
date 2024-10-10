@@ -10,7 +10,7 @@
 <body id="colorBody">
 <?php include '../../Layouts/header.php'; ?> 
     <h1 class="text-center">VERIFICADOR DE MAYORÍA DE EDAD</h1>
-    <div id="form-container">
+    <div class="form-container">
         <form action="" method="post">
             <div class="mb-3">
                 <label for="Edad" class="form-label">Ingrese su edad actual:</label>

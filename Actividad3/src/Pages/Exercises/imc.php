@@ -10,7 +10,7 @@
 <body id="colorBody">
 <?php include '../../Layouts/header.php'; ?> 
 <h1 class="text-center">CALCULADORA DE IMC</h1>
-    <div id="form-container">
+    <div class="form-container">
         <form action="" method="post">
             <div class="mb-3">
                 <label for="peso" class="form-label">Ingrese su peso en kilogramos (kg):</label>
