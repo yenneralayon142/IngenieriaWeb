@@ -14,12 +14,12 @@
         <form id="loginForm" method="post">
             <div class="mb-3">
                 <label for="login_usuario" class="form-label">Usuario</label>
-                <input type="text" class="form-control" name="login_usuario" id="login_usuario" placeholder="root">
+                <input type="text" class="form-control" name="login_usuario" id="login_usuario" placeholder="root" required>
                 <div id="usuarioError" class="text-danger"></div> <!-- Mensaje de error para usuario -->
             </div>
             <div class="mb-3">
                 <label for="login_password" class="form-label">Contraseña</label>
-                <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Ingrese su contraseña">  
+                <input type="password" class="form-control" name="login_password" id="login_password" placeholder="Ingrese su contraseña" required>  
                 <div id="passwordError" class="text-danger"></div> <!-- Mensaje de error para contraseña -->
             </div> 
             <div class="d-flex justify-content-center mt-3">
