@@ -9,11 +9,7 @@
 <body id="colorBody">
 <?php include '../Layouts/header.php'?> 
     <h1 class="text-center">FORMULARIO DE ENVIO DE INFORMACIÓN</h1>
-
-
-    
     <div id="form-container">
-       
         <form action="databaseConnection.php" method="post">
             <div class="mb-3">
                 <label for="Apellido" class="form-label">Apellido</label>
