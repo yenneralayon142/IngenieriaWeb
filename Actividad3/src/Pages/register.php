@@ -29,7 +29,7 @@
             </div>
             <div class="mb-3">
                 <label for="ciudad" class="form-label">Ciudad</label>
-                <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Bogotá">
+                <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Bogota">
                 <div id="ciudadError" class="error"></div>
             </div>
             <div class="mb-3">
