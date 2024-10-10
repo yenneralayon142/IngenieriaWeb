@@ -21,7 +21,7 @@
                 <label for="altura" class="form-label">Ingrese su altura en centímetros (cm):</label>
                 <input type="number" class="form-control" name="altura" id="altura" required>
             </div>                      
-            <button type="submit" class="btn btn-dark">Calcular IMC</button>
+            <button type="submit" class="btn btn-dark w-100">Calcular IMC</button>
         </form>
 
         <div id="resultimc" class="text-center">

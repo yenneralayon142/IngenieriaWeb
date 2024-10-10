@@ -17,7 +17,7 @@
                 <label for="Edad" class="form-label">Ingrese su edad actual:</label>
                 <input type="number" class="form-control" name="edad" id="edad" required>
             </div>                      
-            <button type="submit" class="btn btn-dark">Enviar</button>
+            <button type="submit" class="btn btn-dark w-100">Enviar</button>
         </form>
 
         <div class="text-center">
