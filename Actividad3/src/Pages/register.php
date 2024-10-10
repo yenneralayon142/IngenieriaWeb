@@ -51,6 +51,9 @@
             <div id="responseMessage" class="mt-3"></div>
         </form>
     </div>
+    <footer>
+        <?php include '../Layouts/footer.php'?> 
+    </footer>
     <script src="validations/validationsRegister.js"></script>
 </body>
 </html>
