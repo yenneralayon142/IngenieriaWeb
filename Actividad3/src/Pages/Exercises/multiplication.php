@@ -9,7 +9,7 @@
 </head>
 <body id="colorBody">
 <?php include '../../Layouts/header.php'; ?> 
-<h1 class="text-center my-2">GENERADOR DE TABLAS DE MULTIPLICAR</h1>
+<h2 class="text-center my-2">GENERADOR DE TABLAS DE MULTIPLICAR</h1>
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">

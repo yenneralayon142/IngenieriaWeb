@@ -8,7 +8,7 @@
 </head>
 <body class="colorBody">
 <?php include '../Layouts/header.php'?> 
-    <h1 class="text-center">FORMULARIO DE ENVIO DE INFORMACIÓN</h1>
+    <h2 class="text-center">FORMULARIO DE ENVIO DE INFORMACIÓN</h1>
     <div class="form-container">
         <form action="databaseConnection.php" method="post">
             <div class="mb-3">
@@ -34,7 +34,9 @@
                 <label for="Pais" class="form-label">País</label>
                 <input type="text" class="form-control" name="Pais" id="pais">
             </div> 
-            <button type="submit" class="btn btn btn-dark">Enviar</button>
+            <div class="d-flex justify-content-center mt-3">
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </div> 
         </form>
     </div>
     <?php include '../Layouts/footer.php'?> 

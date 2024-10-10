@@ -9,7 +9,7 @@
 </head>
 <body id="colorBody">
 <?php include '../../Layouts/header.php'; ?> 
-<h1 class="text-center">CALCULADORA DE IMC</h1>
+<h2 class="text-center">CALCULADORA DE IMC</h1>
     <div class="form-container">
         <form action="" method="post">
             <div class="mb-3">

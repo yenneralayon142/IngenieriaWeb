@@ -9,7 +9,7 @@
     <?php include '../Layouts/header.php'?> 
 </head>
 <body id="colorBody">
-    <h1 class="text-center">REGISTRO DE USUARIO</h1>
+    <h2 class="text-center">REGISTRO DE USUARIO</h1>
     <div class="form-container">
         <form id="registroForm" action="../databaseConnection.php" method="post">
             <div class="mb-3">
@@ -47,7 +47,9 @@
                 <input type="password" class="form-control" name="password" id="password" placeholder="Ingresa tu contraseña">
                 <div id="passwordError" class="error"></div>
             </div>
-            <button type="submit" class="btn btn btn-dark">Enviar</button>
+            <div class="d-flex justify-content-center mt-3">
+                <button type="submit" class="btn btn-dark">Enviar</button>
+            </div> 
             <div id="responseMessage" class="mt-3"></div>
         </form>
     </div>

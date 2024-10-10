@@ -145,3 +145,7 @@ body {
     background-color: #23272b; /* Color de fondo al pasar el ratón */
     border-color: #1d2124; /* Color del borde al pasar el ratón */
 }
+
+h2 {
+    margin-top: 2em;
+}
