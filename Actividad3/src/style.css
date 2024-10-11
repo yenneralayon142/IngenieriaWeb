@@ -149,3 +149,65 @@ body {
 h2 {
     margin-top: 2em;
 }
+
+/* Estilos generales para la tabla */
+.table_Register {
+    width: 100%; /* Ocupa el 100% del ancho del contenedor */
+    border-collapse: collapse; /* Colapsa bordes para un aspecto más limpio */
+    font-family: 'DM Sans', sans-serif; /* Fuente de la tabla */
+    margin: 20px 0; /* Espaciado arriba y abajo de la tabla */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tabla */
+}
+
+/* Estilo para el encabezado */
+.table_Register thead {
+    background-color: var(--color-bg-navbar); /* Color de fondo del encabezado */
+    color: white; /* Color del texto */
+}
+
+/* Estilo para las celdas del encabezado */
+.table_Register th {
+    padding: 12px; /* Espaciado interno */
+    text-align: left; /* Alinear texto a la izquierda */
+    font-weight: bold; /* Negrita en el encabezado */
+    border-bottom: 2px solid var(--color-bg-navbar); /* Borde inferior más grueso */
+}
+
+/* Estilo para las filas de la tabla */
+.table_Register tbody tr {
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+}
+
+/* Estilo para las celdas de las filas */
+.table_Register td {
+    padding: 10px; /* Espaciado interno */
+    border: 1px solid #ddd; /* Bordes de las celdas */
+}
+
+/* Cambio de color al pasar el mouse sobre las filas */
+.table_Register tbody tr:hover {
+    background-color: #f1f1f1; /* Color de fondo al pasar el mouse */
+}
+
+/* Espaciado en celdas vacías para mantener el diseño */
+.table_Register td:empty {
+    height: 40px; /* Altura mínima para celdas vacías */
+}
+
+/* Estilo para filas alternas */
+.table_Register tbody tr:nth-child(even) {
+    background-color: #f9f9f9; /* Color de fondo para filas pares */
+}
+
+/* Estilo para una tabla responsiva */
+.table-responsive {
+    margin: 20px; /* Margen para espacio alrededor de la tabla */
+}
+
+/* Estilo para un mensaje si no hay datos */
+.no-data-message {
+    text-align: center; /* Centrar el texto */
+    padding: 20px; /* Espaciado interno */
+    font-size: 1.2em; /* Tamaño de fuente */
+    color: #888; /* Color del texto */
+}
