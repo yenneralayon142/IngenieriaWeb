@@ -43,7 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (count($errores) === 0) {
             // Preparar la consulta SQL para insertar los datos de forma segura
             $stmt = $conn->prepare("INSERT INTO registro (nombre, apellido, edad, ciudad, celular, pass, usuario) VALUES (?, ?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("ssiisss",$nombre, $apellido, $edad, $ciudad, $celular, $pass, $usuario);
+            $stmt->bind_param("ssissss",$nombre, $apellido, $edad, $ciudad, $celular, $pass, $usuario);
 
             // Ejecutar la consulta
             if ($stmt->execute()) {
