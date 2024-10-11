@@ -11,7 +11,7 @@
 <body id="colorBody">
     <h2 class="text-center">REGISTRO DE USUARIO</h1>
     <div class="form-container">
-        <form id="registroForm" action="../databaseConnection.php" method="post">
+        <form id="registroForm" method="post">
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Yenner">
@@ -50,12 +50,12 @@
             <div class="d-flex justify-content-center mt-3">
                 <button type="submit" class="btn btn-dark">Enviar</button>
             </div> 
-            <div id="responseMessage" class="mt-3"></div>
         </form>
+        <div id="responseMessage" class="mt-3"></div>
     </div>
     <?php include '../Layouts/footer.php'?> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Agregar jQuery -->
-    <script src="../Validations/validationsRegister.js"></script>
+    <script src="../Validations/validationsRegister.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 </body>

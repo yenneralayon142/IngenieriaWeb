@@ -4,7 +4,7 @@ CREATE TABLE registro (
     apellido VARCHAR(50),
     edad  INT(20),
     ciudad VARCHAR(50),
-    celular INT(11),
+    celular BIGINT(11),
     usuario VARCHAR(50),
     pass VARCHAR(50) 
 );

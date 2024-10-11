@@ -24,14 +24,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/form.php">Contáctanos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/table.php">Usuarios</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Ejercicios
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/Exercises/age.php">Verificador de Edad</a></li>
-                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/Exercises/multiplication.php">Tabla de Multiplicar</a></li>
-                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/Exercises/imc.php">Calculadora de IMC</a></li>
+                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/age.php">Verificador de Edad</a></li>
+                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/multiplication.php">Tabla de Multiplicar</a></li>
+                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/imc.php">Calculadora de IMC</a></li>
                         </ul>
                     </li>
                 </ul>
