@@ -10,7 +10,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar la conexión
 if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
+    echo json_encode(["message" => "Connection failed: " . $conn->connect_error, "error" => true]);
+    exit;
 }
 
 // Variables para almacenar errores
@@ -18,6 +19,7 @@ $errores = [];
 
 // Procesar el formulario cuando se envía
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    
     // Verificar si se envió un formulario de Registro
     if (isset($_POST['nombre'], $_POST['apellido'], $_POST['edad'], $_POST['ciudad'], $_POST['celular'], $_POST['password'], $_POST['usuario'])) {
         
@@ -34,19 +36,35 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         if (count($errores) === 0) {
             // Preparar la consulta SQL para insertar los datos de forma segura
             $stmt = $conn->prepare("INSERT INTO registro (nombre, apellido, edad, ciudad, celular, pass, usuario) VALUES (?, ?, ?, ?, ?, ?, ?)");
-            $stmt->bind_param("ssissss",$nombre, $apellido, $edad, $ciudad, $celular, $pass, $usuario);
+            $stmt->bind_param("ssissss", $nombre, $apellido, $edad, $ciudad, $celular, $pass, $usuario);
 
             // Ejecutar la consulta
             if ($stmt->execute()) {
-                echo "Registro insertado correctamente";
+                // Respuesta en formato JSON
+                echo json_encode([
+                    "message" => "Registro insertado correctamente",
+                    "data" => [
+                        "nombre" => $nombre,
+                        "apellido" => $apellido,
+                        "edad" => $edad,
+                        "ciudad" => $ciudad,
+                        "celular" => $celular,
+                        "usuario" => $usuario
+                    ]
+                ]);
             } else {
-                $errores['general'] = "Error en la inserción: " . $stmt->error;
+                // Error al insertar
+                echo json_encode(["message" => "Error en la inserción: " . $stmt->error, "error" => true]);
             }
             $stmt->close();
+        } else {
+            // Si hay errores en los datos del formulario
+            echo json_encode(["message" => "Errores en el formulario", "errors" => $errores, "error" => true]);
         }
-    
+
     // Capturar los datos de Login
     } elseif (isset($_POST['login_usuario'], $_POST['login_password'])) {
+        
         // Obtener y limpiar los datos del formulario de login
         $usuario_login = trim($_POST['login_usuario']);
         $pass_login = trim($_POST['login_password']);
@@ -64,34 +82,41 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $result = $stmt->get_result();
 
             if ($result->num_rows > 0) {
-                // El usuario y la contraseña coinciden
-                echo "Inicio de sesión exitoso. ¡Bienvenido $usuario_login!";
+                // Inicio de sesión exitoso
+                echo json_encode(["message" => "Inicio de sesión exitoso. ¡Bienvenido $usuario_login!", "error" => false]);
             } else {
                 // Usuario o contraseña incorrectos
-                $errores['general'] = "Usuario o contraseña incorrectos. Por favor, verifica tus datos.";
+                echo json_encode(["message" => "Usuario o contraseña incorrectos. Por favor, verifica tus datos.", "error" => true]);
             }
             $stmt->close();
+        } else {
+            // Devolver errores de validación
+            echo json_encode(["message" => "Errores en los datos de inicio de sesión", "errors" => $errores, "error" => true]);
         }
-    }
-    
-    // Volver los datos de Registro a formato JSON
-    
-}elseif (isset($_POST['fetchData']) && $_POST['fetchData'] === 'true') {
-    // Consulta para obtener los registros
-    $sql = "SELECT nombre, apellido, edad, ciudad, celular, usuario FROM registro";
-    $result = $conn->query($sql);
 
-    // Verificar si hay resultados
-    if ($result->num_rows > 0) {
-        $rows = [];
-        while($row = $result->fetch_assoc()) {
-            $rows[] = $row;
+    // Obtener los datos de registro en formato JSON
+    } elseif (isset($_POST['fetchData']) && $_POST['fetchData'] === 'true') {
+        
+        // Consulta para obtener los registros
+        $sql = "SELECT nombre, apellido, edad, ciudad, celular, usuario FROM registro";
+        $result = $conn->query($sql);
+
+        // Verificar si hay resultados
+        if ($result->num_rows > 0) {
+            $rows = [];
+            while($row = $result->fetch_assoc()) {
+                $rows[] = $row;
+            }
+            // Devolver los datos en formato JSON
+            echo json_encode(["message" => "Datos obtenidos correctamente", "data" => $rows, "error" => false]);
+        } else {
+            echo json_encode(["message" => "No se encontraron registros", "data" => [], "error" => false]);
         }
-        // Devolver los datos en formato JSON
-        echo json_encode($rows);
-    } else {
-        echo json_encode([]);
     }
+
+} else {
+    // Método no permitido
+    echo json_encode(["message" => "Método no permitido", "error" => true]);
 }
 
 // Cerrar la conexión

@@ -3,10 +3,27 @@ export const sendRegisterForm = (formData) => {
         method: 'POST',
         body: formData,
     })
-    .then(response => response.text())  // Cambiar a `.json()` si esperas respuestas en JSON
+    .then(response => {
+        // Verificamos si la respuesta tiene formato JSON
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+        return response.json();  // Interpretamos la respuesta como JSON
+    })
+    .then(data => {
+        if (data && data.message) {
+            console.log('Mensaje del servidor:', data.message); // Muestra el mensaje de texto
+            if (data.data) {
+                console.log('Datos recibidos:', data.data); // Muestra los datos recibidos
+            }
+            return data; // Retorna los datos para otros usos
+        } else {
+            throw new Error('Respuesta JSON no válida o faltan campos');
+        }
+    })
     .catch(error => {
         console.error('Error al realizar la solicitud:', error);
-        throw new Error('Error al realizar la solicitud');
+        throw error;
     });
 };
 
@@ -16,16 +33,16 @@ export const getRegisterData = () => {
 
     return sendRegisterForm(formData)
     .then(data => {
-        if (Array.isArray(data)) {
-            renderTable(data);  // Renderizamos la tabla si la respuesta es un array de datos
+        if (Array.isArray(data.data)) {
+            renderTable(data.data);  // Renderizamos la tabla si la respuesta contiene un array de datos
         } else {
-            console.error('Error al obtener los datos:', data.message);
+            console.error('Error al obtener los datos:', data.message || 'Respuesta inválida');
         }
     })
     .catch(error => {
         console.error('Error al obtener los datos:', error);
     });
-}
+};
 
 // Función para renderizar la tabla
 const renderTable = (data) => {
@@ -44,8 +61,7 @@ const renderTable = (data) => {
         `;
         tableBody.appendChild(row);
     });
-}
+};
 
 // Llamada para obtener los datos al cargar la página
-
 document.addEventListener('DOMContentLoaded', getRegisterData);
