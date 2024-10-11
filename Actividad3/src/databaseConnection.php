@@ -30,15 +30,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $pass = trim($_POST['password']);
         $usuario = trim($_POST['usuario']);
         
-        // Validar que los campos no estén vacíos
-        if (empty($nombre)) $errores['nombre'] = "El campo nombre es obligatorio";
-        if (empty($apellido)) $errores['apellido'] = "El campo apellido es obligatorio";
-        if (empty($edad)) $errores['edad'] = "El campo edad es obligatorio";
-        if (empty($ciudad)) $errores['ciudad'] = "El campo ciudad es obligatorio";
-        if (empty($celular)) $errores['celular'] = "El campo celular es obligatorio";
-        if (empty($pass)) $errores['password'] = "El campo contraseña es obligatorio";
-        if (empty($usuario)) $errores['usuario'] = "El campo usuario es obligatorio";
-
         // Si no hay errores, proceder a la inserción
         if (count($errores) === 0) {
             // Preparar la consulta SQL para insertar los datos de forma segura
@@ -81,6 +72,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             }
             $stmt->close();
         }
+    }
+    
+    // Volver los datos de Registro a formato JSON
+    
+}elseif (isset($_POST['fetchData']) && $_POST['fetchData'] === 'true') {
+    // Consulta para obtener los registros
+    $sql = "SELECT nombre, apellido, edad, ciudad, celular, usuario FROM registro";
+    $result = $conn->query($sql);
+
+    // Verificar si hay resultados
+    if ($result->num_rows > 0) {
+        $rows = [];
+        while($row = $result->fetch_assoc()) {
+            $rows[] = $row;
+        }
+        // Devolver los datos en formato JSON
+        echo json_encode($rows);
+    } else {
+        echo json_encode([]);
     }
 }
 

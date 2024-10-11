@@ -24,6 +24,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/form.php">Contáctanos</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/table.php">Usuarios</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Ejercicios

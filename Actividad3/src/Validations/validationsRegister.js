@@ -3,7 +3,6 @@ import { sendRegisterForm } from '../service/registerService.js';
 document.getElementById('registroForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Evita que se recargue la página
     let isValid = true;
-
     const form = new FormData(this);
 
     // Obtener los valores de los campos
