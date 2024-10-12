@@ -9,15 +9,15 @@
     <link rel="stylesheet" href="style.css">
     <title>Usabilidad Web</title>
     <?php
-        include 'layouts/header.php';  // Incluye el encabezado
+        include 'src/layouts/header.php';  // Incluye el encabezado
     ?>
 </head>
 <body>
     <div class="container">
-        <?php include 'layouts/content.php'; ?> <!-- Incluye el contenido principal -->
+        <?php include 'src/layouts/content.php'; ?> <!-- Incluye el contenido principal -->
     </div>
     <?php
-        include 'layouts/footer.php';  // Incluye el pie de página
+        include 'src/layouts/footer.php';  // Incluye el pie de página
     ?>
 </body>
 </html>

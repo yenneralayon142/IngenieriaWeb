@@ -118,7 +118,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Método no permitido
     echo json_encode(["message" => "Método no permitido", "error" => true]);
 }
-
 // Cerrar la conexión
 $conn->close();
 ?>
