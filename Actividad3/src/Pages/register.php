@@ -52,6 +52,7 @@
             </div> 
         </form>
         <div id="responseMessage" class="mt-3"></div>
+        <p class="text-center">¿Ya tienes una cuenta? <strong><a href="login.php">Ingresar</a></strong></p>
     </div>
     <?php include '../Layouts/footer.php'?> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Agregar jQuery -->
