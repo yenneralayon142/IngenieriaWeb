@@ -131,7 +131,8 @@ body {
 
 /* Estilo del contenedor del formulario */
 .form-container {
-    width: 50dvw;
+    width: 90%;
+    max-width: 600px;
     margin: 2rem auto; /* Centrando el formulario */
     padding: 2rem; /* Relleno interno */
     background-color: rgba(255, 255, 255, 0.5); /* Fondo blanco */

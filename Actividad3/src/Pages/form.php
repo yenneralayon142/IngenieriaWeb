@@ -5,38 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
 </head>
-<body class="colorBody">
+<body id="colorBody">
 <?php include '../Layouts/header.php'?> 
-    <h2 class="text-center">FORMULARIO DE ENVIO DE INFORMACIÓN</h1>
+    <h2 class="text-center">FORMULARIO DE ENVIO DE INFORMACIÓN</h2>
+    
     <div class="form-container">
+       
         <form action="databaseConnection.php" method="post">
             <div class="mb-3">
-                <label for="Apellido" class="form-label">Apellido</label>
-                <input type="text" class="form-control" name="Apellido" id="apellido">
-            </div>
-            <div class="mb-3">
-                <label for="Nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" name="Nombre" id="nombre">
+                <label for="Nombres" class="form-label">Nombres</label>
+                <input type="text" class="form-control" name="Nombres" id="nombres">
             </div>
             <div class="mb-3"> 
-                <label for="Edad" class="form-label">Edad</label>
-                <input type="number" class="form-control" name="Edad" id="edad">
+                <label for="Telefonos" class="form-label">Teléfonos</label>
+                <input type="number" class="form-control" name="Telefonos" id="telefonos">
             </div>
             <div class="mb-3"> 
-                <label for="Genero" class="form-label">Género</label>
-                <select class="form-select" name="Genero" id="genero">
-                    <option value="Masculino">Masculino</option> 
-                    <option value="Femenino">Femenino</option>
-                </select>
+                <label for="Email" class="form-label">E-mail</label>
+                <input type="Email" class="form-control" name="Email" id="email">
             </div>
             <div class="mb-3">
-                <label for="Pais" class="form-label">País</label>
+                <label for="Pais" class="form-label">Empresa</label>
                 <input type="text" class="form-control" name="Pais" id="pais">
             </div> 
-            <div class="d-flex justify-content-center mt-3">
-                <button type="submit" class="btn btn-dark">Enviar</button>
-            </div> 
+            <button type="submit" class="btn btn btn-dark w-100">Enviar</button>
         </form>
     </div>
     <?php include '../Layouts/footer.php'?> 
