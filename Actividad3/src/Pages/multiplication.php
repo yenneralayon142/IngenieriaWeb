@@ -13,7 +13,7 @@
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-12">
-                <div id="form-container" class="card p-4">
+                <div class="form-container">
                     <form action="" method="post">
                         <div class="mb-3">
                             <label for="numero" class="form-label">Ingrese un número para ver su tabla de multiplicar:</label>
