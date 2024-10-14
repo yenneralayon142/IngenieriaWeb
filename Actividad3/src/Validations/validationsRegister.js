@@ -59,20 +59,23 @@ document.getElementById('registroForm').addEventListener('submit', function(even
         isValid = false;
     }
 
-    // Si las validaciones pasan, enviar los datos del formulario usando el servicio
+    // Dentro de tu manejador de submit
     if (isValid) {
-        sendRegisterForm(form)
-        .then(data => {
-            // Mostrar el mensaje de éxito o error en el div #responseMessage
-            const responseMessage = document.getElementById('responseMessage');
-            responseMessage.innerHTML = data;
-            responseMessage.classList.add('alert', 'alert-success'); // Estilo de bootstrap para el mensaje
-        })
-        .catch(error => {
-            // Mostrar mensaje de error si falla la petición
-            const responseMessage = document.getElementById('responseMessage');
-            responseMessage.innerHTML = 'Ocurrió un error. Inténtalo de nuevo.';
-            responseMessage.classList.add('alert', 'alert-danger');
-        });
+    sendRegisterForm(form)
+    .then(data => {
+        const responseMessage = document.getElementById('responseMessage');
+        
+        // Mostrar el mensaje de éxito o error en formato legible
+        if (data.message) {
+            responseMessage.innerHTML = data.message; // Aquí se muestra el mensaje del servidor
+            responseMessage.classList.add('alert', 'alert-success');
+        }
+        
+    })
+    .catch(error => {
+        const responseMessage = document.getElementById('responseMessage');
+        responseMessage.innerHTML = 'Ocurrió un error. Inténtalo de nuevo.';
+        responseMessage.classList.add('alert', 'alert-danger');
+    });
     }
 });

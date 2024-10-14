@@ -43,6 +43,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 // Respuesta en formato JSON
                 echo json_encode([
                     "message" => "Registro insertado correctamente",
+                    "messageError" => "Error en el registro de la Data",
                     "data" => [
                         "nombre" => $nombre,
                         "apellido" => $apellido,
