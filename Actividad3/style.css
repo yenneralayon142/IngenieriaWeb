@@ -18,11 +18,11 @@
 
 /* Definición de variables CSS */
 :root {
-    --color-bg-navbar: rgba(13, 13, 13, 0.76); /* Color de fondo de la navbar */
+    --color-bg-navbar: rgba(13, 13, 13, 0.5); /* Color de fondo de la navbar */
     --color-text: #f8f9fa; /* Color de texto */
     --color-highlight: #F2A516; /* Color de resaltado */
     --color-hover: #D97904; /* Color de fondo en hover */
-    --color-dropdown-bg: #0D0D0D; /* Color de fondo del dropdown */
+    --color-dropdown-bg:rgba(13, 13, 13, 0.5) ; /* Color de fondo del dropdown */
     --font-size-navbar-brand: 1.8rem; /* Tamaño de fuente para el título de la navbar */
     --font-size-nav-link: 1.1rem; /* Tamaño de fuente para los enlaces de navegación */
     --border-radius: 5px; /* Bordes redondeados */
@@ -39,7 +39,7 @@ html, body {
 body {
     display: flex; /* Flexbox para permitir el posicionamiento */
     flex-direction: column; /* Coloca el footer al final */
-    background-image: url('public/Back1.jpeg'); /* Agrega tu imagen de fondo aquí */
+    background-image: url('public/Back.jpeg'); /* Agrega tu imagen de fondo aquí */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen de fondo */
     background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
@@ -49,7 +49,7 @@ body {
 /*----- Estilos para la barra de navegación ------*/
 .navbar {
     background-color: var(--color-bg-navbar); /* Usando variable para el color de fondo */
-    border-bottom: 2px solid var(--color-dropdown-bg); /* Borde inferior */
+    border-bottom: 1px solid var(--color-dropdown-bg); /* Borde inferior */
 }
 
 .navbar-brand {
@@ -220,5 +220,5 @@ h2 {
 }
 
 
-/* https://color.adobe.com/es/explore?page=2
+
 
