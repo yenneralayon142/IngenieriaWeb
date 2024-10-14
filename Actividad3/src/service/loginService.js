@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     const loginForm = document.getElementById('loginForm');
+    const responseMessage = document.getElementById('responseMessage');
 
     loginForm.addEventListener('submit', function(event) {
         event.preventDefault(); // Evita el envío normal del formulario
@@ -12,12 +13,26 @@ document.addEventListener('DOMContentLoaded', function() {
             method: 'POST',
             body: formData
         })
-        .then(response => response.json()) // Obtener la respuesta como texto
+        .then(response => response.json()) // Obtener la respuesta como json
         .then(data => {
-            document.getElementById('responseMessage').innerHTML = data.message; // Mostrar el mensaje de respuesta
+            // Limpiar mensajes previos
+            responseMessage.innerHTML = '';
+            responseMessage.className = ''; // Limpiar clases
+
+            if (!data.error) {
+                // Inicio de sesión exitoso
+                responseMessage.innerHTML = data.message;
+                responseMessage.classList.add('alert', 'alert-success');
+            } else {
+                // Mostrar error de inicio de sesión
+                responseMessage.innerHTML = data.messageErrorLogin;
+                responseMessage.classList.add('alert', 'alert-danger');
+            }
         })
         .catch(error => {
-            document.getElementById('responseMessage').innerHTML = '<div class="text-danger">Hubo un error en la solicitud.</div>';
+            // Manejar errores de red
+            responseMessage.innerHTML = '<div class="text-danger">Hubo un error en la solicitud.</div>';
+            responseMessage.classList.add('alert', 'alert-danger');
             console.error('Error:', error);
         });
     });

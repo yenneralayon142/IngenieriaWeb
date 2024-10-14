@@ -87,7 +87,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 echo json_encode(["message" => "Inicio de sesión exitoso. ¡Bienvenido $usuario_login!", "error" => false]);
             } else {
                 // Usuario o contraseña incorrectos
-                echo json_encode(["message" => "Usuario o contraseña incorrectos. Por favor, verifica tus datos.", "error" => true]);
+                echo json_encode(["messageErrorLogin" => "Usuario o contraseña incorrectos. Por favor, verifica tus datos.", "error" => true]);
             }
             $stmt->close();
         } else {
