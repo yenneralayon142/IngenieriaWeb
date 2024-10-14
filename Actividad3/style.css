@@ -18,15 +18,15 @@
 
 /* Definición de variables CSS */
 :root {
-    --color-bg-navbar: #343a40; /* Color de fondo de la navbar */
+    --color-bg-navbar: #0D0D0D; /* Color de fondo de la navbar */
     --color-text: #f8f9fa; /* Color de texto */
-    --color-highlight: #ffc107; /* Color de resaltado */
-    --color-hover: #e0a800; /* Color de fondo en hover */
-    --color-dropdown-bg: #495057; /* Color de fondo del dropdown */
+    --color-highlight: #F2A516; /* Color de resaltado */
+    --color-hover: #D97904; /* Color de fondo en hover */
+    --color-dropdown-bg: #0D0D0D; /* Color de fondo del dropdown */
     --font-size-navbar-brand: 1.8rem; /* Tamaño de fuente para el título de la navbar */
     --font-size-nav-link: 1.1rem; /* Tamaño de fuente para los enlaces de navegación */
     --border-radius: 5px; /* Bordes redondeados */
-    --color-bg-footer: #343a40; /* Color de fondo del footer */
+    --color-bg-footer: #0D0D0D; /* Color de fondo del footer */
     --color-footer-text: #f8f9fa; /* Color de texto del footer */
     --font-size-footer: 1rem; /* Tamaño de fuente para el texto del footer */
 }
@@ -137,13 +137,15 @@ body {
 
 /* Estilo del botón de envío */
 .btn-dark {
-    background-color: #343a40; /* Color de fondo */
-    border-color: #343a40; /* Color del borde */
+    background-color: #23272b; /* Color de fondo */
+    border-color: #23272b; /* Color del borde */
+    color: #f1f1f1;
 }
 
 .btn-dark:hover {
-    background-color: #23272b; /* Color de fondo al pasar el ratón */
-    border-color: #1d2124; /* Color del borde al pasar el ratón */
+    background-color: rgb(64, 71, 78); /* Color de fondo al pasar el ratón */
+    border-color: rgba(64, 71, 78, 0.404); /* Color del borde al pasar el ratón */
+    color: #b1adad;
 }
 
 h2 {
@@ -211,3 +213,7 @@ h2 {
     font-size: 1.2em; /* Tamaño de fuente */
     color: #888; /* Color del texto */
 }
+
+
+/* https://color.adobe.com/es/explore?page=2
+
