@@ -95,6 +95,23 @@ body {
     color: var(--color-highlight); /* Color de texto amarillo en hover */
 }
 
+.icon-link {
+    text-decoration: none; /* Elimina la línea subrayada */
+    color: inherit; /* Usa el color definido en el icono en lugar del color del enlace */
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.icon-link i {
+    color: #000000; /* Color inicial del ícono */
+    transition: color 0.3s ease; /* Suaviza la transición del color */
+}
+
+.icon-link i:hover {
+    color: #D97904; /* Color del ícono cuando se pasa el cursor por encima */
+}
+
 
 /* ---- Estilos para los botones de inicio de sesión y registro ------ */
 
