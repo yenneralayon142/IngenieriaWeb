@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="table-responsive">
-        <table id="registerTable" class="table_Register">
+        <table id="registerTable" class="table_Register hidden">
             <thead>
                 <tr>
                     <th>Nombre</th>

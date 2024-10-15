@@ -177,7 +177,7 @@ h2 {
 /* Estilos generales para la tabla */
 .table_Register {
     width: 100%; /* Ocupa el 100% del ancho del contenedor */
-    border-collapse: collapse; /* Colapsa bordes para un aspecto más limpio */
+    border: 1.8px solid #000;
     font-family: 'DM Sans', sans-serif; /* Fuente de la tabla */
     margin: 20px 0; /* Espaciado arriba y abajo de la tabla */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave alrededor de la tabla */
@@ -235,6 +235,9 @@ h2 {
     font-size: 1.2em; /* Tamaño de fuente */
     color: #888; /* Color del texto */
 }
+
+
+
 
 
 

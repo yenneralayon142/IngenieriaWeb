@@ -29,7 +29,10 @@
         <div class="d-flex justify-content-center mt-3">
             <div id="responseMessage" class="mt-3"></div> <!-- Para mostrar mensajes de respuesta -->
         </div> 
+        <p class="text-center">¿No estás registrado aún? <strong><a href="register.php">Registrate</a></strong></p> 
     </div>
+
+
     <?php include '../Layouts/footer.php'?> 
 </body>
     <!-- Asegúrate de cargar los scripts al final del body -->

@@ -19,7 +19,6 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -31,16 +30,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/table.php">Usuarios</a>
                     </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Ejercicios
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/age.php">Verificador de Edad</a></li>
-                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/multiplication.php">Tabla de Multiplicar</a></li>
-                            <li><a class="dropdown-item" href="/ingenieriaweb/Actividad3/src/Pages/imc.php">Calculadora de IMC</a></li>
-                        </ul>
-                    </li>
                 </ul>
                 <div class="d-flex ms-auto">
                     <a class="nav-link btn me-3" href="/ingenieriaweb/Actividad3/src/Pages/login.php">Iniciar Sesión</a>
@@ -49,7 +38,7 @@
             </div>
         </div>
     </nav>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
 </html>
