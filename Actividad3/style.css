@@ -411,7 +411,178 @@ h2 {
     background-color: #e2e6ea;
 }
 
+.text-center {
+    margin: 40px 0;
+    color: #333;
+}
 
+.reviews-container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 40px;
+}
 
+.review {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.review:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.review h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.review p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 40px;
+    max-width: 600px;
+    margin: 40px auto;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.btn-dark {
+    background-color: #333;
+    border: none;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.btn-dark:hover {
+    background-color: #000;
+}
+
+.alert-dark {
+    background-color: #fff;
+    color: #000;
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Sección de Preguntas Frecuentes (FAQ) */
+.faq-section {
+    background-color: #ffffff;
+    padding: 60px 20px;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
+
+.accordion-item {
+    border: none;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.accordion-button {
+    background-color: var(--color-bg-navbar);
+    color: #ffffff;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 15px;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color:var(--color-bg-navbar);
+    color: #fff;
+}
+
+.accordion-body {
+    background-color: #f9f9f9;
+    padding: 20px;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #666;
+}
+
+.accordion-button::after {
+    content: "\25bc"; /* Flecha hacia abajo */
+    font-size: 1.25rem;
+    color: #fff;
+    margin-left: auto;
+}
+
+.accordion-button.collapsed::after {
+    content: "\25bc";
+    color:#fff /* Flecha hacia la derecha */
+}
+
+/* Sección de Clientes */
+
+.clients-section {
+    background-color: #ecf0f1;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.clients-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #2980b9;
+}
+
+.clients-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+}
+
+.client-logo {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.client-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.client-logo:hover {
+    transform: scale(1.1);
+}
+
+.clients-section p {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #34495e;
+}
 
 
