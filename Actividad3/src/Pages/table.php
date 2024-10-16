@@ -27,6 +27,28 @@
             </tbody>
         </table>
     </div>
+      <!-- Contador de visitas -->
+      <div id="page_visit_count_table" class="count alert alert-dark">
+    <!-- Aquí se mostrará el número de visitas -->
+    </div>
+      <!-- Script del contador -->
+      <script>
+        // Verifica si hay un contador almacenado en el localStorage
+        let visitCount = localStorage.getItem('page_visit_count_table');
+
+        // Si no existe, lo inicializa
+        if (visitCount === null) {
+            visitCount = 0;
+        }
+
+        // Incrementa el contador y lo guarda
+        visitCount++;
+        localStorage.setItem('page_visit_count_table', visitCount);
+
+        // Muestra el contador en el elemento con id "page_visit_count"
+        const visitCountDiv = document.getElementById('page_visit_count_table');
+        visitCountDiv.textContent = `Visitas a Usuarios: ${visitCount}`;
+    </script>
     <?php include '../Layouts/footer.php'; ?> 
     <script src="../service/registerService.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

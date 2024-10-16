@@ -31,9 +31,31 @@
             <div id="responseMessage" class="mt-3"></div> <!-- Para mostrar mensajes de respuesta -->
         </div> 
         <p class="text-center">¿No estás registrado aún? <strong><a href="register.php">Registrate</a></strong></p> 
+        <!-- Contador de visitas -->
+        <div id="page_visit_count_Login" class="count alert alert-dark">
+        <!-- Aquí se mostrará el número de visitas -->
+        </div>
+    </div>
     </div>
 
+      <!-- Script del contador -->
+      <script>
+        // Verifica si hay un contador almacenado en el localStorage
+        let visitCount = localStorage.getItem('page_visit_count_Login');
 
+        // Si no existe, lo inicializa
+        if (visitCount === null) {
+            visitCount = 0;
+        }
+
+        // Incrementa el contador y lo guarda
+        visitCount++;
+        localStorage.setItem('page_visit_count_Login', visitCount);
+
+        // Muestra el contador en el elemento con id "page_visit_count"
+        const visitCountDiv = document.getElementById('page_visit_count_Login');
+        visitCountDiv.textContent = `Visitas a Login: ${visitCount}`;
+    </script>
     <?php include '../Layouts/footer.php'?> 
 </body>
     <!-- Asegúrate de cargar los scripts al final del body -->

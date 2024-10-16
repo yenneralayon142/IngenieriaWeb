@@ -54,7 +54,30 @@
         </form>
         <div id="responseMessage" class="mt-3"></div>
         <p class="text-center">¿Ya tienes una cuenta? <strong><a href="login.php">Ingresar</a></strong></p>
+              <!-- Contador de visitas -->
+        <div id="page_visit_count_Register" class="count alert alert-dark">
+            <!-- Aquí se mostrará el número de visitas -->
+        </div>
     </div>
+
+      <!-- Script del contador -->
+      <script>
+        // Verifica si hay un contador almacenado en el localStorage
+        let visitCount = localStorage.getItem('page_visit_count_Register');
+
+        // Si no existe, lo inicializa
+        if (visitCount === null) {
+            visitCount = 0;
+        }
+
+        // Incrementa el contador y lo guarda
+        visitCount++;
+        localStorage.setItem('page_visit_count_Register', visitCount);
+
+        // Muestra el contador en el elemento con id "page_visit_count"
+        const visitCountDiv = document.getElementById('page_visit_count_Register');
+        visitCountDiv.textContent = `Visitas a Register: ${visitCount}`;
+    </script>
     <?php include '../Layouts/footer.php'?> 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Agregar jQuery -->
     <script src="../Validations/validationsRegister.js" type="module"></script>
