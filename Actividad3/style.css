@@ -18,7 +18,7 @@
 
 /* Definición de variables CSS */
 :root {
-    --color-bg-navbar: rgba(13, 13, 13, 0.5); /* Color de fondo de la navbar */
+    --color-bg-navbar: rgba(13, 13, 13, 0.9); /* Color de fondo de la navbar */
     --color-text: #f8f9fa; /* Color de texto */
     --color-highlight: #F2A516; /* Color de resaltado */
     --color-hover: #D97904; /* Color de fondo en hover */
@@ -39,7 +39,7 @@ html, body {
 body {
     display: flex; /* Flexbox para permitir el posicionamiento */
     flex-direction: column; /* Coloca el footer al final */
-    background-image: url('public/Back.jpeg'); /* Agrega tu imagen de fondo aquí */
+    background-image: url('public/Back2.jpeg'); /* Agrega tu imagen de fondo aquí */
     background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
     background-position: center; /* Centra la imagen de fondo */
     background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
@@ -104,12 +104,12 @@ body {
 }
 
 .icon-link i {
-    color: #000000; /* Color inicial del ícono */
+    color: #D97904; /* Color inicial del ícono */
     transition: color 0.3s ease; /* Suaviza la transición del color */
 }
 
 .icon-link i:hover {
-    color: #D97904; /* Color del ícono cuando se pasa el cursor por encima */
+    color: #ffffff; /* Color del ícono cuando se pasa el cursor por encima */
 }
 
 
