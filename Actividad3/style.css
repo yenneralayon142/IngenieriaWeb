@@ -133,9 +133,41 @@ body {
 /* ----- Estilos para el footer ------*/
 .footer {
     background-color: var(--color-bg-footer); /* Usando variable para el color de fondo */
-    padding: 20px 0; /* Espaciado interno */
+    padding: 50px 0; /* Espaciado interno */
     margin-top: auto; /* Empuja el footer al final del contenedor */
     width: 100%; /* Ancho completo */
+}
+
+.container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra el contenedor */
+    padding: 0 20px; /* Espaciado lateral */
+}
+
+.footer-content {
+    display: flex; /* Utiliza flexbox para organizar elementos */
+    justify-content: space-between; /* Espacio entre elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+.footer-address {
+    flex: 1; /* Ocupa espacio flexible */
+    color: #ecf0f1;
+}
+
+.footer-social {
+    flex: 1; /* Ocupa espacio flexible */
+    display: flex; /* Utiliza flexbox para los iconos */
+    justify-content: center; /* Centra los iconos */
+}
+
+.social-link {
+    margin: 0 10px; /* Espaciado entre los iconos */
+}
+
+.social-link img {
+    width: 24px; /* Ancho de los iconos */
+    height: 24px; /* Alto de los iconos */
 }
 
 .footer-text {
@@ -144,6 +176,50 @@ body {
     margin: 0; /* Sin margen */
     text-align: center; /* Alinea el texto al centro */
 }
+
+.social-linki  {
+    text-decoration: none; /* Elimina la línea subrayada */
+    color: inherit; /* Usa el color definido en el icono en lugar del color del enlace */
+    font-size: 35px;
+    margin-left: 230px;
+    margin-right: 20px;
+    color: #af23a4; /* Color inicial del ícono */
+    transition: color 0.3s ease; /* Suaviza la transición del color */
+}
+
+.social-linki i:hover {
+    color: #ffffff; /* Color del ícono cuando se pasa el cursor por encima */
+}
+
+.social-linkw  {
+    text-decoration: none; /* Elimina la línea subrayada */
+    color: inherit; /* Usa el color definido en el icono en lugar del color del enlace */
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #44aa09; /* Color inicial del ícono */
+    transition: color 0.3s ease; /* Suaviza la transición del color */
+}
+
+.social-linkw i:hover {
+    color: #ffffff; /* Color del ícono cuando se pasa el cursor por encima */
+}
+
+.social-linkf  {
+    text-decoration: none; /* Elimina la línea subrayada */
+    color: inherit; /* Usa el color definido en el icono en lugar del color del enlace */
+    font-size: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: #093caa; /* Color inicial del ícono */
+    transition: color 0.3s ease; /* Suaviza la transición del color */
+}
+
+.social-linkf i:hover {
+    color: #ffffff; /* Color del ícono cuando se pasa el cursor por encima */
+}
+
+
 
 
 /* Estilo del contenedor del formulario */
@@ -242,7 +318,7 @@ h2 {
 
 /* Estilo avanzado para la sección Hero */
 .hero-section {
-    background: linear-gradient(rgba(13, 13, 13, 0.8), rgba(13, 13, 13, 0.6)), url('public/Back2.jpeg') center/cover;
+    background: linear-gradient(rgba(13, 13, 13, 1.0), rgba(255, 255, 255, 0.644)), url('public/Back2.jpeg') center/cover;
     color: #f8f9fa;
     padding: 100px 20px;
     text-align: center;
@@ -253,19 +329,22 @@ h2 {
     align-items: center;
     animation: fadeIn 1.5s ease-in-out;
     margin-top: 20px;
+    border-radius: 10px 10px 0 0;
 }
 
 .hero-section h1 {
     font-size: 2.8rem;
     font-weight: 700;
     margin-bottom: 20px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+    color: #e2e6ea;
 }
 
 .hero-section p {
     font-size: 1.5rem;
     margin-bottom: 0;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+    font-weight: bold;
+    color: #3d3f41;
 }
 
 @media (max-width: 768px) {
@@ -362,6 +441,7 @@ h2 {
     margin-bottom: 40px;
     position: relative;
     display: inline-block;
+    color: #f1f1f1;
 }
 
 .about-section h2::after {
@@ -484,6 +564,7 @@ h2 {
     padding: 60px 20px;
     border-top: 2px solid #ffffff;
     border-bottom: 2px solid #ffffff;
+    border-radius: 0 0 10px 10px;
 }
 
 .faq-section h2 {

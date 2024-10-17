@@ -50,10 +50,10 @@
         <section id="clients" class="clients-section">
             <h2 class="text-center">Nuestros Clientes</h2>
             <div class="clients-container">
-                <div class="client-logo"><img src="client1.png" alt="Cliente 1"></div>
-                <div class="client-logo"><img src="client2.png" alt="Cliente 2"></div>
-                <div class="client-logo"><img src="client3.png" alt="Cliente 3"></div>
-                <div class="client-logo"><img src="client4.png" alt="Cliente 4"></div>
+                <div class="client-logo"><img src="public/client1.png" alt="Cliente 1"></div>
+                <div class="client-logo"><img src="public/client2.jpg" alt="Cliente 2"></div>
+                <div class="client-logo"><img src="public/client3.jpg" alt="Cliente 3"></div>
+                <div class="client-logo"><img src="public/client4.png" alt="Cliente 4"></div>
             </div>
             <p class="text-center">Algunos de nuestros clientes más destacados han confiado en nosotros para el desarrollo de sus proyectos tecnológicos.</p>
         </section>
