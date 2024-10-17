@@ -34,9 +34,6 @@
 /* ------ Estilos Generales  para el cuerpo ----- */
 html, body {
     height: 100%; /* Asegura que el cuerpo ocupe el 100% de la altura */
-}
-
-body {
     display: flex; /* Flexbox para permitir el posicionamiento */
     flex-direction: column; /* Coloca el footer al final */
     background-image: url('public/Back2.jpeg'); /* Agrega tu imagen de fondo aquí */
@@ -44,7 +41,6 @@ body {
     background-position: center; /* Centra la imagen de fondo */
     background-attachment: fixed; /* Mantiene la imagen fija al desplazarse */
 }
-
 
 /*----- Estilos para la barra de navegación ------*/
 .navbar {
@@ -156,9 +152,9 @@ body {
 }
 
 .footer-social {
-    flex: 1; /* Ocupa espacio flexible */
-    display: flex; /* Utiliza flexbox para los iconos */
+    display: flex;
     justify-content: center; /* Centra los iconos */
+    gap: 20px; /* Espaciado uniforme entre los iconos */
 }
 
 .social-link {
@@ -219,6 +215,49 @@ body {
     color: #ffffff; /* Color del ícono cuando se pasa el cursor por encima */
 }
 
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column; /* Cambia la dirección del flex a columna para que los elementos estén uno debajo del otro */
+        align-items: center; /* Alinea los elementos al centro */
+        text-align: center; /* Centra el texto en pantallas pequeñas */
+    }
+
+    .footer-address {
+        margin-bottom: 20px; /* Añade un margen inferior para separar la dirección de los iconos sociales */
+    }
+
+    .footer-social {
+        justify-content: space-between; /* Espacia los iconos entre sí */
+        width: 100%; /* Haz que ocupen todo el ancho */
+    }
+
+    .social-link {
+        margin: 0 10px; /* Reduce el margen para evitar que los iconos estén demasiado separados */
+    }
+
+    .social-linki, .social-linkw, .social-linkf {
+        font-size: 28px; /* Reduce el tamaño de los iconos en pantallas pequeñas */
+    }
+
+    .social-linki {
+        margin-left: 5px; /* Ajusta los márgenes para centrar mejor los iconos */
+        margin-right: 5px;
+    }
+
+    .social-linkw {
+        margin-left: 5px; 
+        margin-right: 5px;
+    }
+
+    .social-linkf {
+        margin-left: 5px; 
+        margin-right: 5px;
+    }
+
+    .footer-text {
+        font-size: 14px; /* Reduce el tamaño del texto del copyright en pantallas más pequeñas */
+    }
+}
 
 
 
