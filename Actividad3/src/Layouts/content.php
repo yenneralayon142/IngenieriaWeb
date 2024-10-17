@@ -6,17 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" crossorigin="anonymous">
-    <title>Desarrollo de Software a Medida</title>
+    <title>Sense Digital</title>
 </head>
-
 <body id="colorBody">
     <main class="estiloContent">
         <!-- Sección de Bienvenida -->
         <section id="home" class="hero-section">
-            <h1 class="text-center">Bienvenido a Nuestra Plataforma</h1>
-            <p class="text-center">Proveemos soluciones personalizadas para el éxito digital de tu negocio.</p>
+                <h1 class="text-center">Bienvenido a Nuestra Plataforma</h1>
+                <p class="text-center">Proveemos soluciones personalizadas para el éxito digital de tu negocio.</p>
         </section>
-
         <!-- Servicios -->
         <section id="services" class="services-section">
             <h2 class="text-center">Nuestros Servicios</h2>
@@ -50,6 +48,7 @@
         <section id="clients" class="clients-section">
             <h2 class="text-center">Nuestros Clientes</h2>
             <div class="clients-container">
+                <div class="client-logo"><img src="public/microsoft.png" alt="Cliente 1"></div>
                 <div class="client-logo"><img src="public/client1.png" alt="Cliente 1"></div>
                 <div class="client-logo"><img src="public/client2.jpg" alt="Cliente 2"></div>
                 <div class="client-logo"><img src="public/client3.jpg" alt="Cliente 3"></div>
