@@ -30,6 +30,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/table.php">Usuarios</a>
                     </li>
+                    <li>
+                        <a class="nav-link" href="/ingenieriaweb/Actividad3/src/Pages/about.php">Nosotros</a>
+                    </li>
                 </ul>
                 <div class="d-flex ms-auto">
                     <a class="nav-link btn me-3" href="/ingenieriaweb/Actividad3/src/Pages/login.php">Iniciar Sesión</a>

@@ -704,3 +704,64 @@ h2 {
     font-size: 1.2rem;
     color: #34495e;
 }
+
+.Mision, .Vision {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.Mision:hover, .Vision:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+    position: relative;
+    color: var(--color-bg-navbar); /* Color azul para los títulos */
+}
+
+h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #007bff;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.Mision-Text, .Vision-Text {
+    line-height: 1.7;
+    font-size: 1.1em;
+    color: #555; /* Color más oscuro para el texto */
+}
+
+.Mision-Text {
+    font-style: italic; /* Texto en cursiva para la misión */
+}
+
+.Vision-Text {
+    font-weight: 500; /* Peso medio para el texto de visión */
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    .Mision-Text, .Vision-Text {
+        font-size: 1em;
+    }
+}
+
