@@ -16,13 +16,13 @@
              "Proporcionar servicios de consultoría de software personalizados que integren tecnología de vanguardia y metodologías ágiles, para ayudar a nuestros clientes a optimizar sus procesos, impulsar la innovación y garantizar una experiencia accesible y efectiva para todos los usuarios. Nos comprometemos a fomentar un entorno colaborativo y a crear soluciones sostenibles que generen valor a largo plazo."
         </p>
     </div>
+    
     <div class="Vision">
         <h2 class="Vision-Header"> Nuestra Visión</h2>
         <p class="Vision-Text">
             "Ser la consultora de software líder en soluciones innovadoras y accesibles, transformando la manera en que las organizaciones utilizan la tecnología para alcanzar sus objetivos y mejorar la vida de las personas."
         </p>
     </div>
-    <div id="page_visit_count_About" class="count alert alert-dark"></div>
 </body>
      <!-- Script del contador -->
      <script>
