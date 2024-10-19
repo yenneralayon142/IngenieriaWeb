@@ -16,11 +16,36 @@
              "Proporcionar servicios de consultoría de software personalizados que integren tecnología de vanguardia y metodologías ágiles, para ayudar a nuestros clientes a optimizar sus procesos, impulsar la innovación y garantizar una experiencia accesible y efectiva para todos los usuarios. Nos comprometemos a fomentar un entorno colaborativo y a crear soluciones sostenibles que generen valor a largo plazo."
         </p>
     </div>
+    
     <div class="Vision">
         <h2 class="Vision-Header"> Nuestra Visión</h2>
         <p class="Vision-Text">
             "Ser la consultora de software líder en soluciones innovadoras y accesibles, transformando la manera en que las organizaciones utilizan la tecnología para alcanzar sus objetivos y mejorar la vida de las personas."
         </p>
+    </div>
+    
+    <div class="equipo">
+        <h2 class="equipo-header">Nuestro Equipo</h2>
+        <div class="row">
+            <div class="col-md-3">
+                <h3>Diseñador</h3>
+                <p>
+                    El diseñador es responsable de crear la experiencia visual y la interfaz del usuario. Su enfoque está en la usabilidad y la estética, asegurando que las aplicaciones sean atractivas y fáciles de usar. Trabaja en la creación de prototipos y maquetas, y colabora con desarrolladores para garantizar que el diseño se implemente de manera efectiva.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h3>Desarrollador</h3>
+                <p>
+                    El desarrollador se encarga de la implementación técnica de las soluciones de software. Su labor incluye la programación, pruebas y la integración de sistemas. Colabora con diseñadores para construir interfaces funcionales y con el equipo de gestión de proyectos para asegurar que los desarrollos se alineen con los objetivos del proyecto.
+                </p>
+            </div>
+            <div class="col-md-3">
+                <h3>Scrum Master</h3>
+                <p>
+                    El Scrum Master actúa como facilitador para el equipo de desarrollo, ayudando a gestionar el proceso ágil. Se asegura de que el equipo siga los principios de Scrum, eliminando obstáculos y promoviendo la colaboración. Su objetivo es maximizar la productividad y fomentar un ambiente de trabajo positivo.
+                </p>
+            </div>
+        </div>
     </div>
 </body>
 <?php include '../Layouts/footer.php'; ?> 
