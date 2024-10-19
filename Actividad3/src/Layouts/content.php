@@ -97,6 +97,45 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading4">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse4" aria-expanded="false" aria-controls="faqCollapse4">
+                             ¿HTML (Hypertext Markup Language)?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse4" class="accordion-collapse collapse" aria-labelledby="faqHeading4">
+                        <div class="accordion-body">
+                        Nuestra empresa utiliza HTML como la base de nuestras páginas web. Con HTML, estructuramos el contenido, definimos los elementos y organizamos la información de forma clara y accesible para que los usuarios puedan navegar fácilmente. Cada sección y componente de nuestras páginas comienza con un sólido diseño en HTML.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading5">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse5" aria-expanded="false" aria-controls="faqCollapse5">
+                        ¿CSS (Cascading Style Sheets)?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse5" class="accordion-collapse collapse" aria-labelledby="faqHeading5">
+                        <div class="accordion-body">
+                        Para darle vida y estilo a nuestras páginas, usamos CSS. Este lenguaje nos permite diseñar y personalizar los colores, las fuentes y el diseño visual de nuestros sitios web, asegurando una experiencia atractiva y coherente. Gracias a CSS, cada detalle de nuestras interfaces está optimizado para brindar una apariencia moderna y profesional.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faqHeading6">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse6" aria-expanded="false" aria-controls="faqCollapse6">
+                            ¿JavaScript?
+                        </button>
+                    </h2>
+                    <div id="faqCollapse6" class="accordion-collapse collapse" aria-labelledby="faqHeading6">
+                        <div class="accordion-body">
+                        Implementamos JavaScript para agregar interactividad y dinamismo a nuestras páginas web. Este lenguaje permite que nuestros sitios respondan en tiempo real a las acciones de los usuarios, mejorando la experiencia de navegación con elementos como menús interactivos, actualizaciones automáticas de contenido y animaciones fluidas.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 

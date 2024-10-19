@@ -108,6 +108,12 @@ html, body {
     color: #ffffff; /* Color del ícono cuando se pasa el cursor por encima */
 }
 
+.date {
+    color: var(--color-text);
+    margin-top: 10px;
+
+}
+
 
 /* ---- Estilos para los botones de inicio de sesión y registro ------ */
 
