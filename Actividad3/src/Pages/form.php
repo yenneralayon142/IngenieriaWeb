@@ -45,7 +45,7 @@
 
     <!-- Formulario -->
     <div class="form-container">
-        <form action="databaseConnection.php" method="post">
+        <form action="https://formspree.io/f/mnqejjpd" method="post">
             <div class="mb-3">
                 <label for="Nombres" class="form-label">Nombres</label>
                 <input type="text" class="form-control" name="Nombres" id="nombres" required>
