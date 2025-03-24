@@ -9,3 +9,5 @@ const numberCube = () => {
 
     result.textContent = `El cuadrado del número es ${operation1} y el cubo es ${operation2}`
 }
+
+
