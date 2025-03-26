@@ -1,3 +1,4 @@
+/*Calcule el área de un triángulo equilátero (se debe pedir al usuario los datos para el cálculo). Imprima el resultado */
 const calcule = () => {
     const input = document.getElementById("number")
     const number = Number(input.value)
