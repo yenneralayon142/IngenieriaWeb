@@ -1,3 +1,4 @@
+/*Realice un programa que reciba un número y que determine si este es un número primo. Imprima el resultado. */
 const calcule = () => {
     const input = document.getElementById("number")
     const number = Number(input.value)
