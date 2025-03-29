@@ -1,3 +1,13 @@
+<?php
+include('config/connection.php');
+$con = connection();
+$sql = "SELECT * from users";
+$query = mysqli_query($con,$sql);
+if (!$query) {
+    die("Error en la consulta: " . mysqli_error($con));
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +20,15 @@
         <h1>Registro de Usuarios</h1>
             <form action="">
                 <label for="name">Nombre</label>
-                <input type="text" placeholder="Yenner" id="name">
+                <input type="text" placeholder="Yenner" >
                 <label for="lastname">Apellido</label>
-                <input type="text" placeholder="Alayon" id="lastname">
+                <input type="text" placeholder="Alayon" >
                 <label for="username">Username</label>
-                <input type="text" placeholder="yalayon" id="username">
+                <input type="text" placeholder="yalayon" >
                 <label for="password">Password</label>
-                <input type="text" placeholder="12345" id="password">
+                <input type="text" placeholder="12345" >
                 <label for="email">Email</label>
-                <input type="text" placeholder="yenneralayon@gmail.com" id="email">
+                <input type="text" placeholder="yenneralayon@gmail.com">
                 <input type="submit" value="Agregar Usuario">
             </form>
      </main>
@@ -36,16 +46,21 @@
                         </tr>
                 </thead>
                 <tbody>
-                        <tr>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th></th>
-                            <th><a href="">Editar</a></th>
-                            <th><a href="">Eliminar</a></th>
-                        </tr>
+                    <?php
+                        while ($row = mysqli_fetch_array($query)): 
+                            var_dump($row); // Esto imprimirá cada fila de la base de datos
+                        ?>
+                            <tr>
+                                <td><?= $row['id'] ?></td>
+                                <td><?= $row['name'] ?></td>
+                                <td><?= $row['lastname'] ?></td>
+                                <td><?= $row['username'] ?></td>
+                                <td><?= $row['password'] ?></td>
+                                <td><?= $row['email'] ?></td>
+                                <td><a href="">Editar</a></td>
+                                <td><a href="">Eliminar</a></td>
+                            </tr>
+                    <?php endwhile; ?>
                 </tbody>
             </table>
      </section>
