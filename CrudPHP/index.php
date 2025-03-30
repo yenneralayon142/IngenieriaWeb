@@ -18,13 +18,13 @@ if (!$query) {
 <body>
      <main>
         <h1>Registro de Usuarios</h1>
-            <form action="">
+            <form action="views/insert_user.php" method="POST"> 
                 <label for="name">Nombre</label>
-                <input type="text" placeholder="Yenner" >
+                <input type="text" placeholder="Yenner" id="name">
                 <label for="lastname">Apellido</label>
-                <input type="text" placeholder="Alayon" >
+                <input type="text" placeholder="Alayon" id="lastname">
                 <label for="username">Username</label>
-                <input type="text" placeholder="yalayon" >
+                <input type="text" placeholder="yalayon" id="username">
                 <label for="password">Password</label>
                 <input type="text" placeholder="12345" >
                 <label for="email">Email</label>
@@ -48,7 +48,6 @@ if (!$query) {
                 <tbody>
                     <?php
                         while ($row = mysqli_fetch_array($query)): 
-                            var_dump($row); // Esto imprimirá cada fila de la base de datos
                         ?>
                             <tr>
                                 <td><?= $row['id'] ?></td>
