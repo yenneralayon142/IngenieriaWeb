@@ -11,7 +11,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         echo json_encode(['status' => 1 , 'message' => 'abc1234'])
     } else {
         http_response_code(401);
-        echo json_encode(['status' => 0 ,'error' => 'Credenciales invalidas'])
+        echo json_encode(['status' => 0 ,'error' => 'Credenciales invalidas'|])
     }
 }
 
