@@ -1,5 +1,4 @@
 <?php
-
 require_once __DIR__ . '/../Models/User.php';
 require_once __DIR__ . '/../Repositories/UserRepositoryInterface.php';
 require_once __DIR__ . '/../Repositories/UserRepository.php';
@@ -22,7 +21,7 @@ switch ($method) {
         break;
 
     case 'POST':
-        if ($input && isset($input['id']) && isset($input['name'])) {
+        if ($input && isset($input['id']) && isset($input['nombre'])) {
             $repo->save($input);
             echo json_encode(['message' => 'Usuario creado']);
         } else {
