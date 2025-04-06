@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Microservicio con PHP</title>
+</head>
+<body>
+  <h1>Crear Usuario</h1>
+  <button onclick="crearUsuario()">Crear Usuario</button>
+  <script>
+    function crearUsuario() {
+      fetch('http://localhost:8000/Controllers/api.php', {
+        method: 'POST',
+        body: JSON.stringify({ id: 3, name: 'Carlos' }),
+        headers: { 'Content-Type': 'application/json' }
+      })
+      .then(res => res.json())
+      .then(data => console.log('Respuesta del backend:', data));
+    }
+  </script>
+</body>
+</html>
