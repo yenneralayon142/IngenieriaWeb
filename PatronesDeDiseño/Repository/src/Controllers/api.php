@@ -1,8 +1,6 @@
 <?php
-<<<<<<< HEAD
+
 require_once __DIR__ . '/../Models/User.php';
-=======
->>>>>>> main
 require_once __DIR__ . '/../Repositories/UserRepositoryInterface.php';
 require_once __DIR__ . '/../Repositories/UserRepository.php';
 
