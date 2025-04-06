@@ -14,6 +14,7 @@ class Usuario{
 
 $usuario1 = new Usuario("Yenner");
 echo $usuario1->saludar();
+$usuario7 = 0;
 
 class Usuario2{
     public $nombre;
