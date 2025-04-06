@@ -4,10 +4,10 @@ require_once 'UserRepository.php';
 
 class UserService {
 
-    private $repostory;
+    private $repository;
 
-    public function __construct (UserRepositoryInterface $repostory) {
-        $this->repository = $repostory; 
+    public function __construct (UserRepositoryInterface $repository) {
+        $this->repository = $repository; 
     }
 
     public function getUser ($id) {
