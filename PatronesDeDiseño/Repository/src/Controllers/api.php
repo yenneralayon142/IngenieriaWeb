@@ -1,7 +1,7 @@
 <?php
-require_once 'User.php';
-require_once 'UserRepositoryInterface.php';
-require_once 'UserRepository.php';
+require_once __DIR__ . '/../Models/User.php';
+require_once __DIR__ . '/../Repositories/UserRepositoryInterface.php';
+require_once __DIR__ . '/../Repositories/UserRepository.php';
 
 header('Content-Type: application/json');
 $method = $_SERVER['REQUEST_METHOD'];

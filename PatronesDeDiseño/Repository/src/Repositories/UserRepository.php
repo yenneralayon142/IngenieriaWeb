@@ -1,5 +1,5 @@
 <?php
-    require_once 'UserRepositorieInterface.php';
+    require_once 'UserRepositoryInterface.php';
     
     class UserRepository implements UserRepositoryInterface {
         private $users = [];
@@ -8,7 +8,8 @@
         {
             $this->users = [
                 1 => ['id' => 1, 'name' => 'Andres'],
-                2 => ['id' => 2, 'name' => 'Yenner']
+                2 => ['id' => 2, 'name' => 'Yenner'],
+                3 => ['id' => 3, 'name' => 'Stiven']
             ];
         }
 

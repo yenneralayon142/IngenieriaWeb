@@ -1,6 +1,6 @@
 <?php
 
-require_once 'UserRepository.php';
+require_once '../Repositories/UserRepository.php';
 
 class UserService {
 
