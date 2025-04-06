@@ -11,17 +11,22 @@ $repo = new UserRepository();
 $input = json_decode(file_get_contents('php://input'), true);
 
 switch ($method) {
-    case 'GET':
+    case 'GET':  
         if (isset($_GET['id'])) {
             $user = $repo->find($_GET['id']);
             echo json_encode($user ?? ['error' => 'Usuario no encontrado']);
-        } else {
+        }
+        elseif (isset($input['id'])) {
+            $user = $repo->find($input['id']);
+            echo json_encode($user ?? ['error' => 'Usuario no encontrado']);
+        }
+        else {
             echo json_encode($repo->all());
         }
         break;
 
     case 'POST':
-        if ($input && isset($input['id']) && isset($input['nombre'])) {
+        if ($input && isset($input['nombre'])) {
             $repo->save($input);
             echo json_encode(['message' => 'Usuario creado']);
         } else {

@@ -9,25 +9,30 @@
         public function __construct()
         {
             $this->users = [
-                1 => ['id' => 1, 'nombre' => 'Andres'],
+                1 => ['id'> 1, 'nombre' => 'Andres'],
                 2 => ['id' => 2, 'nombre' => 'Yenner'],
-                3 => ['id' => 3, 'nombre' => 'Stiven']
+                3 => ['id' => 3, 'nombre' => 'Stiven'] 
             ];
             $this->db = Conexion::conectar();
         }
 
         public function find($id){
-            return $this->users[$id] ?? null;
-        }
-
+            $sql = "SELECT * FROM users WHERE id = ?";
+            $stmt = $this->db->prepare($sql); 
+            $stmt->execute([$id]);
+            return $stmt->fetch(PDO::FETCH_ASSOC);
+        }    
+        
         public function all(){
-            return array_values($this->users);
+            $sql = "SELECT * FROM users";
+            $stmt = $this->db->query($sql);
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
         }
 
         public function save($user) {
-           $sql = "INSERT INTO users (id,nombre) VALUES(?,?)";
+           $sql = "INSERT INTO users (nombre) VALUES(?)";
            $stmt = $this->db->prepare($sql);
-           $stmt->execute([$user['id'], $user['nombre']]); 
+           $stmt->execute([$user['nombre']]); 
         }
 
         public function delete($id){
