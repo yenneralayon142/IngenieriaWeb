@@ -1,4 +1,4 @@
-fetch('http://tu-backend/register-user.php', {
+fetch('http://localhost:8000/IngenieriaWeb/PatronesDeDiseño/Repository', {
     method: 'POST',
     body: JSON.stringify({ name: 'Carlos'}),
     headers: { 'Content-Type': 'application/json' }
