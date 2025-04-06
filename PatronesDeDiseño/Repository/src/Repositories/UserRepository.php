@@ -3,7 +3,10 @@
     
     class UserRepository implements UserRepositoryInterface {
         private $users = [];
+<<<<<<< HEAD
 
+=======
+>>>>>>> main
         public function __construct()
         {
             $this->users = [
