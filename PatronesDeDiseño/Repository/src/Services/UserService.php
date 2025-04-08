@@ -1,11 +1,10 @@
 <?php
 
-require_once 'UserRepository.php';
+require_once '../Repositories/UserRepository.php';
 
 class UserService {
 
     private $repository;
-
     public function __construct (UserRepositoryInterface $repository) {
         $this->repository = $repository; 
     }
