@@ -8,9 +8,10 @@ export async function renderCharacters(characters) {
 
         // Insertamos HTML dentro del div con info del personaje
         div.innerHTML = `
-            <h3>${char.name}</h3>
+            <h5>${char.name}</h5>
             <p>Status: ${char.status}</p>
-            <p>Species: ${char.specie}</p>
+            <p>Species: ${char.species}</p>
+            <img src="${char.image}"></img>
         `;
 
         // 🔑 Aquí usamos appendChild para agregar ese div al contenedor
