@@ -32,12 +32,12 @@ $repo = new UserRepository();
 $input = json_decode(file_get_contents('php://input'), true);
 
 // ============================
-// 🔁 Control de flujo por método
+// Control de flujo por método
 // ============================
 
 switch ($method) {
     case 'GET':
-        // 📥 GET: Obtener usuarios
+        //  GET: Obtener usuarios
 
         // Si se proporciona un ID por la URL
         if (isset($_GET['id'])) {
@@ -58,7 +58,7 @@ switch ($method) {
         break;
 
     case 'POST':
-        // ➕ POST: Crear nuevo usuario
+        //  POST: Crear nuevo usuario
 
         // Validación básica: verificar si el campo 'nombre' está presente
         if ($input && isset($input['nombre'])) {
