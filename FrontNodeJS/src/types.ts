@@ -7,3 +7,7 @@ export interface NonSensitiveDiaryEntry {
   weather: Weather
   visibility: Visibility
 }
+
+export interface DiaryEntry extends NonSensitiveDiaryEntry{
+  comment: string
+}

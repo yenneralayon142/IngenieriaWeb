@@ -10,17 +10,19 @@ const useDiariesById = (id:number | null) => {
     useEffect(() => {
         if(id === null) return
         setLoading(true)
+        setError(null)
+        setDiary(null)
         getByIdDiaries(id)
             .then((data) => {
                 setDiary(data)
                 setLoading(false)
             })
             .catch(() =>{
-                setError("Error fetching diary by ID")
+                setError("Datos no encontrados")
                 setLoading(false)
             })
     },[id])
 
-    return {diary, loading, error}
+    return {diary, loading, error,setError}
 }
 export default useDiariesById
