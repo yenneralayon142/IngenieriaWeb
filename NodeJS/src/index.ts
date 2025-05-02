@@ -7,7 +7,7 @@ const app = express()
 app.use(cors())
 app.use(express.json()) // middleware que transforma la req.body a un json
 
-const PORT = 3000
+const PORT = process.env.PORT || 3000;
 
 app.get('/ping', (_req, res) => {
   console.log('someone pinged here!!')
