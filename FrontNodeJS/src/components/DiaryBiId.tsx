@@ -1,11 +1,11 @@
-import React,{useEffect, useState} from "react";
+import React,{useState} from "react";
 import useDiariesById from "../Hooks/useDiariesById"
 
 const DiariesById: React.FC = () => {
   const [inputId, setInputId] = useState<number | null>(null)
   const [searchId, setSearchId] = useState<number | null>(null)
 
-  const { diary, loading, error,setError } = useDiariesById(searchId)
+  const { diary, error,setError } = useDiariesById(searchId)
 
   const handleSearch = () => {
     if (inputId !== null && inputId > 0) {

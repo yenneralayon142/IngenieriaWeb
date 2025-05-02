@@ -1,4 +1,4 @@
-import { useState,useEffect } from "react";
+import { useState} from "react";
 import { postDiaries } from "../api/diaryService";
 import { DiaryEntry } from "../types";
 

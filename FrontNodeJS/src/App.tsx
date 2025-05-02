@@ -1,4 +1,3 @@
-import React from "react"
 import DiaryList from "./components/DiaryList"
 import DiaryBiId from "./components/DiaryBiId"
 import DiaryPost from "./components/DiaryPost"
