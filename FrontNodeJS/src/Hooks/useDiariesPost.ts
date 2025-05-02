@@ -21,7 +21,12 @@ const useDiariesPost = () => {
         }
     }
 
-    return { sendDiary, loading,error,success}
+    const resetStatus = () => {
+        setSuccess(false)
+        setError(null)
+    }
+
+    return { sendDiary, loading,error,success,resetStatus}
     
 }
 

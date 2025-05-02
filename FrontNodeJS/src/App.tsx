@@ -14,6 +14,7 @@ function App() {
           <h2>Busqueda por id</h2>
           <DiaryBiId/>
           <h2>Enviar datos al diario</h2>
+          <p>Tenga en cuenta que el comentario no se mostrará ya que es privado</p>
           <DiaryPost/>
       </div>
     </>

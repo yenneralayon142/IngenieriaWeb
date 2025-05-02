@@ -9,7 +9,7 @@ const DiaryPost: React.FC = () => {
     const [visibility,setVisibility] = useState<Visibility | "">("")
     const [comment, setComment] = useState("")
     const [message, setMessage] = useState<string | null>(null)
-    const {sendDiary, loading, error, success} = useDiariesPost()
+    const {sendDiary, loading, error, success,resetStatus} = useDiariesPost()
 
     const handleSend = () => {
         if(weather && date && visibility && comment) {
@@ -19,6 +19,21 @@ const DiaryPost: React.FC = () => {
             setMessage("Por favor complete todos los campos")
         }
     }
+
+    useEffect(() => {
+        if (success) {
+          setWeather("");
+          setDate("");
+          setVisibility("");
+          setComment("");
+          setMessage(null);
+          const timer = setTimeout(() => {
+            resetStatus()
+          }, 3000);
+      
+          return () => clearTimeout(timer);
+        }
+      }, [success, resetStatus]);
 
     return (
         <div className="diarySelect">
