@@ -1,7 +1,7 @@
 import axios from "axios";
 import { NonSensitiveDiaryEntry,DiaryEntry } from "../types";
 
-const baseUrl = 'http://localhost:3000/api/diaries'
+const baseUrl = 'https://ingenieriaweb-rn96.onrender.com/api/diaries'
 
 export const getAllDiaries = async ():Promise<NonSensitiveDiaryEntry[]>  => {
     const response = await axios.get<NonSensitiveDiaryEntry[]>(baseUrl)
