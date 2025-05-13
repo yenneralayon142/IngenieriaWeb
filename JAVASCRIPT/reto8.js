@@ -7,3 +7,14 @@
  *   lo resuelvan automáticamente.
  */
 
+function count (word) {
+    result = 0
+    for(let i = 0; i < word.length ; i++){
+        if(word === word){
+            result += 1
+            break
+        }
+    }
+    return (`La palabra se repite:${result} veces`)
+}
+console.log(count("holaa holaa holaa feo feo"))
