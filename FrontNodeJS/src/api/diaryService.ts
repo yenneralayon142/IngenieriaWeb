@@ -18,3 +18,4 @@ export const postDiaries = async(newDiary: Omit<DiaryEntry,'id'>): Promise<Diary
     return response.data
 }
 
+
