@@ -6,11 +6,9 @@
 
 function invertWord (word) {
     let result = ''
-
-    for(let i = word.length - 1; i >= 0; i--){
+    for(let i = word.length - 1; i >= 0;  i--){
         result += word[i]
     }
-
     return result
 }
-console.log(invertWord("Holaa"))
+console.log(invertWord("Hola Mundo"))

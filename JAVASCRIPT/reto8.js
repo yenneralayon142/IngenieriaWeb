@@ -7,14 +7,28 @@
  *   lo resuelvan automáticamente.
  */
 
-function count (word) {
-    result = 0
-    for(let i = 0; i < word.length ; i++){
-        if(word === word){
-            result += 1
-            break
+function countWords(text){
+    const words = {}
+
+    const textClean = text
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g,' ')
+        .split(' ')
+
+        for(let i = 0; i < textClean.length;i++){
+            const key = textClean[i]
+            if(key === '') continue
+            if(words[key] !== undefined){
+                words[key]++
+            }else{
+                words[key] = 1
+            }
         }
-    }
-    return (`La palabra se repite:${result} veces`)
+
+        for(const word in words){
+            const count = words[word]
+            console.log(`${word} se ha repetido ${count} ${count === 1 ? "vez" : "veces"}`)
+        }
 }
-console.log(count("holaa holaa holaa feo feo"))
+
+countWords("Hola, mi nombre es brais. Mi nombre completo es Brais Moure (MoureDev).");
